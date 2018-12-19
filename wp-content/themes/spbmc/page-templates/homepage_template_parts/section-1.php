@@ -2,6 +2,8 @@
 	
 	<img class="desktop hero" src="<?php bloginfo('template_directory');?>/images/hero.jpg"/>
 	
+	<img class="tablet hero" src="<?php bloginfo('template_directory');?>/images/hero-ipad.jpg"/>
+	
 	<span class="trackline"></span><!-- trackline -->
 	
 	<div class="sec_one_inner">

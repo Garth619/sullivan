@@ -64,9 +64,11 @@
 		
 		<div class="header_middle">
 			
-			<a href="">
+			<a href="<?php bloginfo('url');?>">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/logo-white-gold.svg"/>
+				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/logo-white-gold.svg"/>
+				
+				<img class="tablet" src="<?php bloginfo('template_directory');?>/images/logo-blue.svg"/>
 				
 			</a>
 			
@@ -78,7 +80,7 @@
 				
 				<span>Call Today For a Free Consultation</span>
 				
-				<a href="">(212) 732-900</a>
+				<a href="">(212) 732-9000</a>
 				
 			</div><!-- consult_phone_wrapper -->
 			

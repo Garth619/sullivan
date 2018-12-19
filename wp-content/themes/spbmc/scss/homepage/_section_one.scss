@@ -23,7 +23,11 @@ img.hero {
 	top:0;
 	left:0;
 	object-fit:cover;
-	object-position:50% 0;
+	object-position:0px 0;
+}
+
+img.tablet.hero {
+	display: none;
 }
 
 
@@ -49,10 +53,27 @@ img.hero {
 			color:$goldlight;
 			text-transform: uppercase;
 			font-size:16px;
-			letter-spacing: 0.3em;
+			letter-spacing: 0.31em;
 			font-family: $poppins;
 			font-weight:700;
+			&:last-of-type {
+				span {
+					&:after {
+						display: none;
+					}
+					}
+				}
 			span {
+				&:after {
+					content:"";
+					display: inline-block;
+					width:8px;
+					height:8px;
+					background: $goldlight;
+					border-radius:50%;
+					vertical-align: top;
+					margin:4px 20px 0 14px;
+				}
 				
 			}
 		}
@@ -82,3 +103,133 @@ a.button {
 a.sec_one_click {
 	margin:190px 0 0;
 }
+
+
+@media screen and (max-width: 1450px) {
+	
+img.hero {
+	object-position:-70px 0;
+}
+	
+	
+.sec_one_inner {
+	
+	.large_header {
+		font-size:100px;
+		line-height: 170px;
+		span {
+			
+		}
+	}
+	.small_header {
+		
+		.small_header_single {
+			letter-spacing: 0.32em;
+			span {
+				&:after {
+					margin-left:24px;
+					margin-right:23px;
+				}
+			}
+		}
+	}
+}
+
+	
+	a.sec_one_click {
+		margin:200px 0 0;
+	}
+	
+	
+} /* Media Query */
+
+@media screen and (max-width: 1250px) {
+	
+	
+	span.trackline {
+		display: none;
+	}
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 1066px) {
+	
+
+#section_one {
+	margin-top: 89px;
+	height:690px;
+}
+
+
+img.hero {
+	object-position:12% 0;
+}
+
+img.desktop.hero {
+	display: none;
+}
+
+img.tablet.hero {
+	display: block;
+}
+
+	
+.sec_one_inner {
+	padding: 196px 0 0;
+	.large_header {
+		
+		span {
+			font-size:70px;
+			line-height: 145px;
+		}
+	}
+	.small_header {
+		margin: -149px 0 0;
+		.small_header_single {
+			letter-spacing: 0.25em;
+			&:nth-of-type(1) {
+				display: none;
+			}
+			&:last-of-type {
+				
+			}
+			span {
+				&:last-of-type {
+					
+				}
+				&:after {
+					margin-left: 8px;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+a.sec_one_click {
+ 	margin: 138px 0 0;
+}
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 960px) {
+	
+	
+	
+	img.hero {
+		object-position: -200px 0;
+	}
+
+	
+	
+	
+} /* Media Query */
