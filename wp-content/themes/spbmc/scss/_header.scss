@@ -72,6 +72,9 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	flex-grow:1;
+	.menu_wrapper {
+		display: none;
+	}
 	.consult_phone_wrapper {
 		display: flex;
 		flex-direction: column;
@@ -84,6 +87,9 @@ header {
 			font-family: $poppins;
 			font-weight:600;
 			font-size:16px;
+		}
+		span.mobile {
+			display: none;
 		}
 		a {
 			color: #fff;
@@ -162,6 +168,88 @@ header {
 		padding: 0 26px 0 20px;
 		a {
 			margin:0;
+		}
+	}
+}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	header {
+		height: 181px;
+		border:none;
+	}
+	
+	.header_left {
+		display: none;
+		.menu_wrapper {
+			
+		}
+	}
+	
+	.header_right {
+		height: 92px;
+		background:$bluedark;
+		.menu_wrapper {
+			display: flex;
+			height: 92px;
+		}
+		.consult_phone_wrapper {
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			span {
+				font-size:15px;
+			}
+			span.desktop {
+				display: none;
+			}
+			span.mobile {
+				display: block;
+			}
+			a {
+				font-size:26px;
+				margin-top:8px;
+				position: relative;
+				top:2px;
+			}
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 585px) {
+	
+	
+.header_middle {
+	padding:0 27px;
+	align-items: center;
+	a {
+		
+		img {
+			
+		}
+		img.desktop {
+			
+		}
+		img.tablet {
+			display: none;
+		}
+		img.mobile {
+			display: block;
+			max-width:100%;
+			height:auto;
 		}
 	}
 }

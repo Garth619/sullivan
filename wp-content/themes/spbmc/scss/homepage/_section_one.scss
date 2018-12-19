@@ -233,3 +233,51 @@ a.sec_one_click {
 	
 	
 } /* Media Query */
+
+
+
+
+@media screen and (max-width: 767px) {
+	
+#section_one {
+	margin-top: 181px;
+	img.hero {
+		height: 429px;
+		object-position:50% 0;
+	}
+}
+	
+.sec_one_inner {
+	padding: 118px 0 0;
+	.large_header {
+		
+		span {
+			font-size: 50px;
+			line-height: 60px;
+		}
+	}
+	.small_header {
+		margin:0;
+		.small_header_single {
+			
+			&:nth-of-type(1) {
+				
+			}
+			&:last-of-type {
+				
+			}
+			span {
+				&:last-of-type {
+					
+				}
+				&:after {
+					
+				}
+			}
+		}
+	}
+}
+	
+	
+	
+} /* Media Query */

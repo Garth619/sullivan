@@ -70,17 +70,31 @@
 				
 				<img class="tablet" src="<?php bloginfo('template_directory');?>/images/logo-blue.svg"/>
 				
+				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/logo-stacked.svg"/>
+				
 			</a>
 			
 		</div><!-- header_middle -->
 			
 		<div class="header_right">
 			
+			<div class="menu_wrapper">
+				
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				
+				<span class="menu_title">Menu</span><!-- menu_title -->
+				
+			</div><!-- menu_wrapper -->
+			
 			<div class="consult_phone_wrapper">
 				
-				<span>Call Today For a Free Consultation</span>
+				<span class="desktop">Call Today For a Free Consultation</span><!-- desktop -->
 				
-				<a href="">(212) 732-9000</a>
+				<span class="mobile">Call For a Free Consultation</span><!-- mobile -->
+				
+				<a href="tel:(212) 732-9000">(212) 732-9000</a>
 				
 			</div><!-- consult_phone_wrapper -->
 			
