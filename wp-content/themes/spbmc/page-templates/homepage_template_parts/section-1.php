@@ -2,6 +2,8 @@
 	
 	<img class="desktop hero" src="<?php bloginfo('template_directory');?>/images/hero.jpg"/>
 	
+	<span class="trackline"></span><!-- trackline -->
+	
 	<div class="sec_one_inner">
 		
 		<div class="large_header">
@@ -33,6 +35,8 @@
 			</div><!-- small_header_single -->
 			
 		</div><!-- small_header -->
+		
+		<a class="sec_one_click button" href="#consultation">Click For Free Consultation</a>
 		
 	</div><!-- sec_one_inner -->
 

@@ -1,7 +1,17 @@
 #section_one {
 	width:100%;
-	height:830px;
+	height:822px;
 	position: relative;
+}
+
+span.trackline {
+	display: block;
+	width:90px;
+	height:100%;
+	border-right:1px solid rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top:0;
+	left:0;
 }
 
 
@@ -21,7 +31,7 @@ img.hero {
 	position: relative;
 	z-index:1;
 	text-align: center;
-	padding:205px 0 0;
+	padding:215px 0 0;
 	.large_header {
 		color:#fff;
 		font-size:115px;
@@ -47,4 +57,28 @@ img.hero {
 			}
 		}
 	}
+}
+
+
+a.button {
+	color:#fff;
+	text-transform: uppercase;
+	font-family: $poppins;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0.3em;
+	background: $blue;
+	text-decoration: none;
+	transition: all 200ms ease-in-out;
+	display: inline-block;
+	padding:32px 40px;
+	&:hover {
+		color:$blue;
+		background: #fff;
+	}
+}
+
+
+a.sec_one_click {
+	margin:190px 0 0;
 }
