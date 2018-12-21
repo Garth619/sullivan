@@ -5,6 +5,39 @@
 
 jQuery(document).ready(function($){
 	
+	
+	
+	
+	
+	// change submit button verbiage
+
+
+
+	
+	var windowWidth = $(window).width();
+
+
+
+	function checkSubmit() {
+    
+    if (windowWidth < 768) {
+        
+      
+    		$("input[type=submit]").val("Submit");
+    	   		
+    		
+    } 
+    
+	};
+	
+
+	checkSubmit();
+
+
+
+
+
+	
 
 	
 	 /* Modernizr - check if browser supports webp for section_one. 
@@ -115,7 +148,7 @@ jQuery(document).ready(function($){
       console.log('images loaded');
     }
 
-    // createWaypoint('section_two', null, null, '100%', loadImages, false);
+    createWaypoint('section_two', null, null, '100%', loadImages, false);
 
 
 
@@ -264,6 +297,39 @@ $('.small_header').slick({
 
 
 $("ul > li.menu-item-has-children > a[href='#']").removeAttr("href");
+
+
+
+// form click
+
+
+$('.gform_wrapper ul li').on('click', function(e) {
+	
+	
+	$('.gform_wrapper ul li').removeClass('clicked');
+  
+  $(this).addClass('clicked');
+  
+});
+
+
+	$(document).click(function (e){
+
+		var container = $(".gform_wrapper ul li");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+
+			$('.gform_wrapper ul li').removeClass('clicked');
+		
+		}
+
+	}); 
+
+
+
+
+
+
 
 
   

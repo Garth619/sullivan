@@ -416,6 +416,28 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/pattern_tile.png": {
+		"ft": 32768,
+		"iS": 12385,
+		"oA": 0,
+		"oAP": "/images/pattern_tile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/pattern_two.png": {
+		"ft": 32768,
+		"iS": 234203,
+		"oA": 0,
+		"oAP": "/images/pattern_two.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/images/profile-img.jpg": {
 		"ft": 16384,
 		"iS": 179898,
@@ -591,6 +613,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/homepage_template_parts/section-1.php",
+		"oF": 0
+		},
+	"/page-templates/homepage_template_parts/section-2.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/homepage_template_parts/section-2.php",
 		"oF": 0
 		},
 	"/page-templates/template-about.php": {
@@ -937,6 +966,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/homepage/_section_one.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/scss/homepage/_section_two.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/homepage/_section_two.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
