@@ -6,6 +6,41 @@ nav {
 	height:100vh;
 	background: $bluedark;
 	z-index:20;
+	display: none;
+}
+
+.close {
+	width:89px;
+	height:89px;
+	background: $blue;
+	position: absolute;
+	top:0;
+	left:0;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 500ms ease-in-out;
+	&:before, &:after {
+		content:"";
+		display: block;
+		position: absolute;
+		top: 41px;
+    left: 19px;
+		width:45px;
+		height:2px;
+		background:#fff;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+}
+
+
+.close.fade {
+	opacity: 1;
+	transition-delay: 300ms;
 }
 
 

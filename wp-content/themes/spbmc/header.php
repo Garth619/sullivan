@@ -104,6 +104,12 @@
 	
 	<nav>
 		
+		<div class="close">
+			
+			
+			
+		</div><!-- close -->
+		
 		<div class="nav_inner">
 			
 			<div class="nav_col nav_col_one">

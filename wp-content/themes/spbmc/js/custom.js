@@ -344,7 +344,34 @@ $('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
 });
 
 
+// current page
+
+
 $('nav ul.menu > li.current-menu-ancestor > a').next('ul.sub-menu').clone().appendTo('.nav_clone').show();
+
+
+// open
+
+
+$('.menu_wrapper').on('click', function(e) {
+  
+	$('nav').slideToggle(450);
+	
+	$('.close').addClass('fade');
+
+});
+
+
+// close 
+
+$('.close').on('click', function(e) {
+  
+	$('nav').slideToggle(450);
+	
+	$(this).removeClass('fade');
+	
+
+});
 	
 
   
