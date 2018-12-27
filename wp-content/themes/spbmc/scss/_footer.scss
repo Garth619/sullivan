@@ -247,13 +247,97 @@ a.location_button.button {
 }
 
 
+.copyright_wrapper {
+	background: #fff;
+}
+
+
+.copyright_inner {
+	max-width:1920px;
+	padding:0 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height:122px;
+}
+
+
+.copyright_col {
+	flex-basis:33.33333%;
+	&:nth-of-type(1) {
+		text-align: left;
+	}
+	&:nth-of-type(2) {
+		text-align: center;
+	}
+	&:nth-of-type(3) {
+		text-align: right;
+	}
+	ul.copyright {
+		list-style: none;
+		margin:0;
+		li {
+			font-size:12px;
+			color:$blue;
+			letter-spacing: 0.1em;
+			font-family: $poppins;
+			font-weight:700;
+			text-transform: uppercase;
+			margin-bottom:5px;
+			a {
+				&:last-of-type {
+					&:after {
+						display: none;
+					}
+				}
+			}
+			a {
+				text-decoration: none;
+				color:$blue;
+				display: inline-block;
+				&:after {
+					content:"";
+					width:2px;
+					height:8px;
+					display: inline-block;
+					background: $blue;
+					margin:2px 6px 0 8px;
+					vertical-align: top;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	.copyright_inner {
+		padding: 0 46px;
+	}
+	
+	a.ilawyer {
+		img {
+			width:240px;
+		}
+	}
+	
+	
+	
+} /* Media Query */
+
+
 
 @media screen and (max-width: 1215px) {
 	
 	
 	.location_wrapper {
 		text-align: center;
-		padding: 115px 70px 95px;
+		padding: 115px 70px 97px;
 	}
 
 	
@@ -365,6 +449,52 @@ span.required {
 	margin: 26px 0 0;
 }
 	
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	.copyright_inner {
+		flex-direction: column;
+		height:auto;
+		padding:45px 32px 40px 32px;
+	}
+	
+	
+.copyright_col {
+	
+	&:nth-of-type(1) {
+		text-align: center;
+		order:2;
+	}
+	&:nth-of-type(2) {
+		text-align: center;
+		order:1;
+	}
+	&:nth-of-type(3) {
+		text-align: center;
+		order:3;
+	}
+}
+
+
+
+.copyright_col {
+	ul.copyright {
+		margin:20px 0 15px;
+		li {
+			display: inline-block;
+			a {
+				
+			}
+		}
+	}
+}
 	
 	
 	
@@ -494,6 +624,22 @@ span.required {
 span.required {
  	margin: 19px 0 0;
 }
+
+
+
+
+.copyright_col {
+	ul.copyright {
+		margin:28px 0 27px;
+		li {
+			display: block;
+			a {
+				
+			}
+		}
+	}
+}
+
 	
 	
 	

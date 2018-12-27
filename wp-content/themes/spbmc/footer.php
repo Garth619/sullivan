@@ -105,6 +105,47 @@
 		<a class="button location_button" href="">View All Locations</a>
 		
 	</div><!-- location_wrapper -->
+	
+	<div class="copyright_wrapper">
+		
+		<div class="copyright_inner">
+			
+			<div class="copyright_col">
+				
+				<ul class="copyright">
+					<li>Copyright &copy; 2018 - SPBMC,P.C.</li>
+					<li>
+						<a href="">Disclaimer</a>
+						<a href="">Sitemap</a>
+						<a href="">Google+</a>
+					</li>
+				</ul>
+				
+			</div><!-- copyright_col -->
+			
+			<div class="copyright_col">
+				
+				<a class="" href="<?php bloginfo('url');?>">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/logo-blue-spbmc.svg"/>
+					
+				</a>
+				
+			</div><!-- copyright_col -->
+			
+			<div class="copyright_col">
+				
+				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
+					
+				</a>
+				
+			</div><!-- copyright_col -->
+			
+		</div><!-- copyright_inner -->
+	
+	</div><!-- copyright_wrapper -->
 		
 </footer>
 
