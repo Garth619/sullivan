@@ -101,8 +101,44 @@
 		</div><!-- header_right -->	
 		
 	</header>
-				
 	
-	<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+	<nav>
+		
+		<div class="nav_inner">
+			
+			<div class="nav_col nav_col_one">
+				
+				<a class="" href="<?php bloginfo('url');?>">
+					
+					<img src="<?php bloginfo('template_directory');?>/images/logo-white-gold-stacked.svg"/>
+					
+				</a>
+				
+			</div><!-- nav_col -->
+			
+			<div class="nav_col nav_col_two">
+				
+				<div class="nav_col_inner">
+				
+					<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'main_menu' ) ); ?>
+				
+				</div><!-- nav_col_inner -->
+				
+				<div class="nav_col_inner">
+				
+					
+					<div class="nav_clone"></div><!-- nav_clone -->
+					
+				
+				</div><!-- nav_col_inner -->
+			
+			</div><!-- nav_col -->
+			
+						
+		</div><!-- nav_inner -->
+		
+	</nav>
+	
+	
 
 			

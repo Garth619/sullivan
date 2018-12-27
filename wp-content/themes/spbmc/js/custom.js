@@ -328,9 +328,24 @@ $('.gform_wrapper ul li').on('click', function(e) {
 
 
 
+/* Nav Clone
+--------------------------------------------------------------------------------------- */
 
 
 
+$('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+  
+
+	$(".nav_clone").empty();
+	
+	$(this).next('ul.sub-menu').clone().appendTo('.nav_clone').fadeIn();
+	
+
+});
+
+
+$('nav ul.menu > li.current-menu-ancestor > a').next('ul.sub-menu').clone().appendTo('.nav_clone').show();
+	
 
   
 }); // document ready
