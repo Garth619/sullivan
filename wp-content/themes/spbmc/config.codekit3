@@ -209,7 +209,7 @@
 		"oAP": "/images/hero-intl.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/images/hero-ipad.jpg": {
@@ -630,6 +630,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/homepage_template_parts/section-2.php",
+		"oF": 0
+		},
+	"/page-templates/internal-banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/internal-banner.php",
 		"oF": 0
 		},
 	"/page-templates/template-about.php": {

@@ -49,6 +49,96 @@ h1,h2,h3,h4 {
 */
 
 
+
+.content {
+	font-family: $poppins;
+	color:$bluedark;
+	font-size:18px;
+	line-height: 36px;
+	h1 {
+		font-family: $prata;
+		font-size:75px;
+		line-height: 90px;
+		color:$bluedark;
+		margin-bottom:70px;
+	}
+	h2 {
+		color:$gold;
+		font-size:24px;
+		line-height: 43px;
+		font-weight: 700;
+		margin:0 0 20px 0;
+	}
+	h3 {
+		color:$blue;
+		padding:7px 0 30px 0;
+		font-size:20px;
+		line-height: 28px;
+		font-weight: 700;
+	}
+	p, ul, ol {
+		margin-bottom:37px;
+	}
+	ul {
+		list-style: none;
+		li {
+			position: relative;
+			padding-left:18px;
+			margin-bottom:15px;
+			&:before {
+				content:"";
+				width:6px;
+				height:6px;
+				background: $blue;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				top:15px;
+				left:0;
+			}
+		}
+	}
+	ol {
+			list-style: none;
+			counter-reset: item;
+			> li {
+				counter-increment: item;
+				margin-bottom: 14px;
+				position: relative;
+				padding-left:32px;
+	 		}
+	 		> li:before {
+	 				content: counter(item)" )";
+	 				color: $gold;
+	 				font-family: $poppins;
+	 				position: absolute;
+	 				top:0;
+	 				left:0;
+	 				font-weight: 700;
+	 			}
+		}
+	a {
+		color:$blue;
+		font-weight: 600;
+		//text-decoration: none;
+		padding-bottom:0px;
+		//border-bottom:1px solid $blue;
+		transition: all 200ms ease-in-out;
+		&:hover {
+			color:$gold;
+		}
+	}
+	blockquote {
+		font-family: $prata;
+		color:$blue;
+		font-size:28px;
+		line-height: 49px;
+		text-align: center;
+		padding: 43px 115px 75px 10px;
+	}
+}
+
+
 @media screen and (max-width: 767px) {
 	
 	

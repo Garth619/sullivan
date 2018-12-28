@@ -58,8 +58,6 @@ nav {
 	height:100%;
 	align-items: center;
 	justify-content: space-between;
-	
-	
 }
 	
 	
@@ -142,7 +140,7 @@ nav {
 					> a {
 						&:after {
 							content:"+";
-							color:$gold;
+							color:$goldlight;
 							transition: all 200ms ease-in-out;
 							margin-left:5px;
 						}
@@ -249,6 +247,22 @@ nav {
 		.close.fade {
 			transition-delay: 0ms;
 		}
+		
+		
+		
+		
+		.nav_col_inner {
+			ul.menu {
+				>li.menu-item-has-children {
+					>a.open {
+						&:after {
+							content:"-";
+						}
+					}
+				}
+			}
+		}
+		
 		
 		
 		

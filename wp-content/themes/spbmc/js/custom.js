@@ -149,6 +149,8 @@ jQuery(document).ready(function($){
     }
 
     createWaypoint('section_two', null, null, '100%', loadImages, false);
+    
+    createWaypoint('internal_main', null, null, '100%', loadImages, false);
 
 
 
@@ -190,12 +192,9 @@ jQuery(document).ready(function($){
 
 
     createWaypoint('section_one', '.sticky_nav', 'visible', 0, null, true);
+    
+    createWaypoint('internal_main', '.sticky_nav', 'visible', -200, null, true);
    
-    
-    
-    
-    
-    
 
 
 
@@ -389,6 +388,8 @@ $('.close').on('click', function(e) {
     	  
     		$(this).next('ul.sub-menu').toggleClass('open');
     		
+    		$(this).toggleClass('open');
+    		
     	});
     	   		
     		
@@ -399,6 +400,20 @@ $('.close').on('click', function(e) {
 	
 
 	checkNav();
+	
+	
+	// sidebar
+	
+	
+	$('.sidebar_wrapper ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+	  
+	
+		$(this).next('ul.sub-menu').slideToggle(200);
+		
+		$(this).toggleClass('open');
+		
+
+	});
 	
 
   

@@ -1,0 +1,137 @@
+.internal_banner {
+	width:100%;
+	height:578px;
+	position: relative;
+	img {
+		display: block;
+		width:100%;
+		height:100%;
+		object-fit:cover;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+
+
+
+.internal_banner_content {
+	position: relative;
+	z-index:1;
+	text-align: center;
+	padding:183px 0 0;
+	span.large_header {
+		display: block;
+		color:#fff;
+		font-family: $prata;
+		font-size:90px;
+		line-height: 100px;
+		max-width:835px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	a {
+		margin-top:32px;
+	}
+}
+
+
+
+.container {
+	padding-left:89px;
+	padding-right:60px;
+	min-height:300px;
+	width:100%;
+}
+
+
+.two_col {
+	max-width:1850px;
+	margin:0 auto;
+	display: flex;
+	margin:143px 0;
+}
+
+
+.sidebar_wrapper {
+	flex-basis: 475px;
+	flex-shrink:0;
+	.sidebar {
+		padding:20px;
+		background: $bluedark;
+	}
+	.sidebar_inner {
+		border:1px solid $gold;
+		padding:60px;
+		height: 100%;
+		ul {
+			list-style: none;
+			li {
+				color:#fff;
+				font-family: $poppins;
+				a {
+					color:#fff;
+					text-decoration: none;
+					transition: all 200ms ease-in-out;
+					&:hover {
+						color:$goldlight;
+					}
+				}
+			}
+		}
+		ul.menu {
+			
+			>li.menu-item-has-children {
+				> a {
+						position: relative;
+						display: block;
+						cursor: pointer;
+						&:after {
+							content:"+";
+							color:$goldlight;
+							position: absolute;
+							top:2px;
+							right:0;
+						}
+				}
+				> a.open {
+					&:after {
+						content:"-";
+					}
+				}
+			}
+			> li {
+					text-transform: uppercase;
+					font-weight: 800;
+					font-size: 14px;
+					letter-spacing: 0.2em;
+					margin-bottom:58px;
+					&:last-of-type {
+						margin-bottom:0;
+					}
+					> a {
+						
+					}
+			}
+		}
+		ul.sub-menu {
+			display: none;
+			margin:33px 0 0;
+			> li {
+					text-transform: none;
+					font-weight: 500;
+					font-size:16px;
+					letter-spacing: 0.05em;
+					margin-bottom:35px;
+					&:last-of-type {
+						margin-bottom:0;
+					}
+			}
+		}
+	}
+}
+
+.content_wrapper {
+	padding:0 0 0 6%;
+	max-width:1075px;
+}

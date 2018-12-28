@@ -127,7 +127,7 @@
 				
 				<a class="" href="<?php bloginfo('url');?>">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/logo-blue-spbmc.svg"/>
+					<img data-src="<?php bloginfo('template_directory');?>/images/logo-blue-spbmc.svg"/>
 					
 				</a>
 				
@@ -137,7 +137,7 @@
 				
 				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
+					<img data-src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
 					
 				</a>
 				
