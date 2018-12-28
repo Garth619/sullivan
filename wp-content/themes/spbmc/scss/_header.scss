@@ -188,6 +188,17 @@ header {
 }
 
 
+body:not(.page-template-template-home) {
+	header {
+		height: 181px;
+	}
+	.header_right {
+		background:$bluedark;
+		height: 92px;
+	}
+}
+
+
 .sticky_nav {
 	display: block;
 	position: fixed;
