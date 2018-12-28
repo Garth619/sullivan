@@ -19,6 +19,13 @@ text-shadow: 1px 1px 1px rgba(0,0,0,0.05);
 line-height: 1;
 }
 
+
+
+
+	body {
+		overflow-y: scroll;
+	}
+
 body .gform_wrapper .gform_validation_container {
 	display: none;
 }

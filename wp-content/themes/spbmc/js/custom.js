@@ -189,7 +189,7 @@ jQuery(document).ready(function($){
     }
 
 
-    //createWaypoint('section_two', '#contact_trigger', 'visible', 500, null, true);
+    createWaypoint('section_one', '.sticky_nav', 'visible', 0, null, true);
    
     
     
@@ -358,6 +358,8 @@ $('.menu_wrapper').on('click', function(e) {
 	$('nav').slideToggle(450);
 	
 	$('.close').addClass('fade');
+	
+	$('html, body').addClass('fixed');
 
 });
 
@@ -368,10 +370,35 @@ $('.close').on('click', function(e) {
   
 	$('nav').slideToggle(450);
 	
-	$(this).removeClass('fade');
+	$('.close').removeClass('fade');
+	
+	$('html, body').removeClass('fixed');
 	
 
 });
+
+
+
+	
+	function checkNav() {
+    
+    if (windowWidth < 1201) {
+        
+      
+    	$('nav ul.menu > li.menu-item-has-children > a').on('click', function(e) {
+    	  
+    		$(this).next('ul.sub-menu').toggleClass('open');
+    		
+    	});
+    	   		
+    		
+    } 
+  
+    
+	};
+	
+
+	checkNav();
 	
 
   

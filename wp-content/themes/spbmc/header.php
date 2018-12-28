@@ -60,6 +60,8 @@
 				
 			</div><!-- menu_wrapper -->
 			
+			<div class="close"></div><!-- close -->
+			
 		</div><!-- header_left -->
 		
 		<div class="header_middle">
@@ -88,6 +90,8 @@
 				
 			</div><!-- menu_wrapper -->
 			
+			<div class="close"></div><!-- close -->
+			
 			<div class="consult_phone_wrapper">
 				
 				<span class="desktop">Call Today For a Free Consultation</span><!-- desktop -->
@@ -102,13 +106,35 @@
 		
 	</header>
 	
+	<div class="sticky_nav">
+		
+		<div class="menu_wrapper">
+				
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				<span class="menu_bar"></span><!-- menu_bar -->
+				
+				<span class="menu_title">Menu</span><!-- menu_title -->
+				
+			</div><!-- menu_wrapper -->
+			
+			<div class="close"></div><!-- close -->
+			
+			<div class="consult_phone_wrapper">
+				
+				<span class="desktop">Call Today For a Free Consultation</span><!-- desktop -->
+				
+				<span class="mobile">Call For a Free Consultation</span><!-- mobile -->
+				
+				<a href="tel:(212) 732-9000">(212) 732-9000</a>
+				
+			</div><!-- consult_phone_wrapper -->
+		
+	</div><!-- sticky_nav -->
+	
 	<nav>
 		
-		<div class="close">
-			
-			
-			
-		</div><!-- close -->
+		<div class="close"></div><!-- close -->
 		
 		<div class="nav_inner">
 			
