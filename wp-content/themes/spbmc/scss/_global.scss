@@ -139,14 +139,20 @@ h1,h2,h3,h4 {
 		text-align: center;
 		padding: 43px 0 75px;
 	}
-	p:first-of-type:first-letter {
-		font-size: 100px;
-	  font-family: $prata;
-	  font-size: 100px;
-	  float: left;
-	  color:$blue;
-	  line-height: 83px;
-	  padding: 21px 15px 0 13px;
+	
+}
+
+body:not(.page-template-template-bio) {
+	.content {
+		p:first-of-type:first-letter {
+			font-size: 100px;
+			font-family: $prata;
+			font-size: 100px;
+			float: left;
+			color:$blue;
+			line-height: 83px;
+			padding: 21px 15px 0 13px;
+		}
 	}
 }
 

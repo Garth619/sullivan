@@ -268,16 +268,14 @@ jQuery(document).ready(function($){
 
 
 
-$('.small_header').slick({
+$('.att_awards_slideshow').slick({
   infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-	arrows:false,
-	mobileFirst:true,
-	fade:true,
-	autoplay:true,
-	autoplaySpeed: 4000,
-	speed:600,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+	arrows:true,
+	prevArrow:".att_awards_button_left",
+	nextArrow:".att_awards_button_right",
+	dots:false,
 	responsive: [
     {
       breakpoint: 768,
@@ -415,6 +413,17 @@ $('.close').on('click', function(e) {
 
 	});
 	
+	
+	// check if there is a banner on just internals to style the different headers 
+	
+	
+	if (!$(".home")[0] && !$(".internal_banner")[0] ){
+		
+		$('body').addClass('no-banner');
+   	
+  }
+  
+
 
   
 }); // document ready
