@@ -13,6 +13,15 @@ $goldgreadient: linear-gradient(41deg, #e5c28f 1%,#c79b5d 100%);
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5c28f+1,c79b5d+100 */
 
 
+// text gradient
+
+@mixin mytextgradient {
+   background-image:$goldgreadient;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+
+
 // fonts
 
 

@@ -139,6 +139,15 @@ h1,h2,h3,h4 {
 		text-align: center;
 		padding: 43px 0 75px;
 	}
+	p:first-of-type:first-letter {
+		font-size: 100px;
+	  font-family: $prata;
+	  font-size: 100px;
+	  float: left;
+	  color:$blue;
+	  line-height: 83px;
+	  padding: 21px 15px 0 13px;
+	}
 }
 
 
@@ -170,6 +179,22 @@ img.aligncenter {
 	float:none;
 	max-width:100%;
 	height:auto;
+}
+
+
+
+.content {
+	h1 {
+		font-size:60px;
+		line-height: 65px;
+		margin-bottom: 57px;
+	}
+	blockquote {
+		padding: 6px 0 40px;
+	}
+	p:first-of-type:first-letter {
+	  padding: 21px 15px 0 0px;
+	}
 }
 	
 	
