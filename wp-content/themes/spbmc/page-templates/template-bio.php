@@ -7,7 +7,7 @@ get_header(); ?>
 <div id="internal_main" class="">
 
 
-<div class="container two_col">
+<div class="container no_banner_col">
 	
 	<div class="att_bio_wrapper">
 		
@@ -33,15 +33,18 @@ get_header(); ?>
 				
 				<ul>
 					<li class="pa_title">Practice Areas</li>
-					<li><a href="">Plaintiff’s Personal Injury</a></li>
-					<li><a href="">Plaintiff’s Personal Injury</a></li>
-					<li><a href="">Plaintiff’s Personal Injury</a></li>
-					<li><a href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
 				</ul>
 				
 			</div><!-- att_sidebar -->
 		
 			<div class="att_content content">
+				
+				<img class="att_profile_mobile" src="<?php bloginfo('template_directory');?>/images/profile-img.jpg"/>
 				
 				<p>Robert Sullivan, the firm’s senior member, is one of America’s top trial lawyers and an advocate with an unparalleled reputation for defending the public interest and championing equal justice under the law.</p>
 

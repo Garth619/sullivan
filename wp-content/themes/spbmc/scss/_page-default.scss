@@ -63,6 +63,11 @@
 }
 
 
+.no_banner_col {
+	margin:90px auto 125px;
+}
+
+
 .sidebar_wrapper {
 	flex-basis: 475px;
 	flex-shrink:0;
@@ -210,6 +215,13 @@
 	}
 	
 	
+	.no_banner_col {
+		margin: 181px auto 125px;
+	}
+	
+	
+
+	
 	
 } /* Media Query */
 
@@ -231,6 +243,11 @@
 	.one_col {
 		margin: 181px 0 67px;
 		padding-top:75px;
+	}
+	
+	
+	.no_banner_col {
+		margin: 181px auto 80px;
 	}
 	
 	

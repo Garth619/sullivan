@@ -278,8 +278,18 @@ $('.att_awards_slideshow').slick({
 	dots:false,
 	responsive: [
     {
-      breakpoint: 768,
-      settings: "unslick"
+      breakpoint: 1066,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
    }
 	]
  });

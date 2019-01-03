@@ -198,11 +198,16 @@ img.aligncenter {
 	blockquote {
 		padding: 6px 0 40px;
 	}
-	p:first-of-type:first-letter {
-	  padding: 21px 15px 0 0px;
-	}
 }
 	
+	
+	body:not(.page-template-template-bio) {
+		.content {
+			p:first-of-type:first-letter {
+			padding: 21px 15px 0 0px;
+			}
+		}
+	}
 	
 	
 	
