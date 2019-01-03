@@ -375,6 +375,23 @@ function wpbeginner_numeric_posts_nav() {
 }
 
 
+// blockquote shortcode
 
 
 
+// Shortcode Internal Video
+
+function att_blockquote( $atts, $content = null ) { 
+	
+	$atts = shortcode_atts( array(
+       'attname' => '',
+       'attposition' => '',
+   ), $atts );
+	
+	
+	return '<div class="blockquote_wrapper"><blockquote>' . $content . '</blockquote><div class="blockquote_meta"><span>' . $atts['attname'] .'</span><span>' . $atts['attposition'] . '</span></div></div>';
+	
+	}
+	
+	
+add_shortcode( 'blockquote', 'att_blockquote' );
