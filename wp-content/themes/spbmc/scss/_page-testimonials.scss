@@ -2,11 +2,17 @@ body.page-template-template-testimonials {
 	.no_banner_col {
 		padding-top: 104px;
 	}
+	.internal_header {
+		h1 {
+			
+		}
+	}
 }
 
 
 img.skyline {
 	width:440px;
+	height:197px;
 	margin-bottom:42px;
 }
 
@@ -60,3 +66,179 @@ span.testimonial_subheader {
 		display: block;
 	}
 }
+
+
+
+@media screen and (max-width: 1160px) {
+	
+	
+	
+	body.page-template-template-testimonials {
+	.no_banner_col {
+		padding-top: 104px;
+	}
+	.internal_header {
+		h1 {
+			font-size: 65px;
+			line-height: 81px;
+			letter-spacing: 0.15em;
+		}
+	}
+}
+
+span.testimonial_subheader {
+	font-size: 20px;
+}
+
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1066px) {
+	
+	
+	
+	.testimonial_col {
+		flex-basis:47%;
+	}
+	
+	
+	.single_testimonial{
+		&:last-of-type {
+			padding-bottom:0;
+		}
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 915px) {
+	
+	
+	.testimonial_wrapper {
+		display: block;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 730px) {
+	
+	
+	
+body.page-template-template-testimonials {
+	.no_banner_col {
+		padding-top: 59px;
+	}
+	.internal_header {
+		h1 {
+			font-size: 48px;
+		}
+	}
+}
+
+	img.skyline {
+		width: 317px;
+		height: 147px;
+		margin-bottom: 5px;
+	}
+	
+	span.testimonial_subheader {
+		font-size: 13px;
+    letter-spacing: 0.24em;
+    padding-top: 3px;
+	}
+	
+	.single_testimonial {
+		padding-bottom: 39px;
+		margin-top: 45px;
+	}
+	
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 555px) {
+	
+	
+	
+body.page-template-template-testimonials {
+	.no_banner_col {
+		
+	}
+	.internal_header {
+		h1 {
+			font-size: 36px;
+		}
+	}
+}
+
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 430px) {
+	
+	
+body.page-template-template-testimonials {
+	.no_banner_col {
+		
+	}
+	.internal_header {
+		h1 {
+			font-size: 30px;
+			line-height: 45px;
+		}
+	}
+}
+	
+	img.skyline {
+		width: 267px;
+    height: 123px;
+	}
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 366px) {
+	
+	
+	
+body.page-template-template-testimonials {
+	.no_banner_col {
+		
+	}
+	.internal_header {
+		h1 {
+			font-size: 25px;
+			line-height: 30px;
+		}
+	}
+}
+
+	img.skyline {
+		width: 234px;
+	}
+	
+	
+	span.testimonial_subheader {
+		padding-top: 11px;
+	}
+	
+	
+	
+	
+	
+} /* Media Query */
