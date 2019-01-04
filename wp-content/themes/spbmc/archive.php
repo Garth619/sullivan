@@ -1,7 +1,16 @@
 <?php get_header(); ?>
 
+<div id="internal_main" class="">
 
 
+<?php get_template_part( '/page-templates/internal', 'banner' ); ?>
+
+
+<div class="container two_col">
+	
+	<?php get_sidebar('blog'); ?>
+	
+	<div class="content_wrapper content">
 		
 		<?php
 	/*
@@ -27,9 +36,11 @@
 <?php endif; ?>
 			</h1>
 		
+
 		
-				
-			<?php
+		<div class="blog_feed">
+		
+						<?php
 	/*
 	 * Since we called the_post() above, we need to
 	 * rewind the loop back to the beginning that way
@@ -42,11 +53,40 @@
 	get_template_part( 'loop', 'archive' );
 ?>
 
-				
 			
+		
+		</div><!-- blog_feed -->
+		
+		<div class="pagination">
+
+			<?php wpbeginner_numeric_posts_nav(); ?>
+
+		</div><!-- pagination -->
+
+	</div><!-- content_wrapper -->
+	
+	
+</div><!-- container -->
+
+
+
+</div><!-- internal_main -->
+
 
 
 <?php get_footer(); ?>
+
+
+
+
+		
+				
+				
+	
+			
+
+
+
 
 
 		

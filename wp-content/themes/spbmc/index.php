@@ -3,25 +3,12 @@
 <div id="internal_main" class="">
 
 
-<div class="internal_banner">
-	
-	<img src="<?php bloginfo('template_directory');?>/images/hero-intl.jpg"/>
-	
-	<div class="internal_banner_content">
-		
-		<span class="large_header">New York Personal Injury Attorneys </span><!-- large_header -->
-		
-		<a class="button" href="#consultation">Click for free consultation</a>
-		
-	</div><!-- internal_banner_content -->
-	
-</div><!-- internal_banner -->
+<?php get_template_part( '/page-templates/internal', 'banner' ); ?>
 
 
 <div class="container two_col">
 	
-	
-	<?php get_sidebar(); ?>
+	<?php get_sidebar('blog'); ?>
 	
 	<div class="content_wrapper content">
 		
@@ -32,6 +19,12 @@
 			<?php get_template_part( 'loop', 'index' ); ?>
 		
 		</div><!-- blog_feed -->
+		
+		<div class="pagination">
+
+			<?php wpbeginner_numeric_posts_nav(); ?>
+
+		</div><!-- pagination -->
 
 	</div><!-- content_wrapper -->
 	

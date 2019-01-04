@@ -24,7 +24,7 @@
 		
 		<div class="blog_meta">
 			
-			<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+			<?php $pfx_date = get_the_date(); echo $pfx_date ?> in
 			
 			<?php echo get_the_category_list();?>
 			
@@ -46,11 +46,7 @@
 
 <?php endif; ?>
 
-<div class="pagination">
 
-	<?php wpbeginner_numeric_posts_nav(); ?>
-
-</div><!-- pagination -->
 
 
 <!--
