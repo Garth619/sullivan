@@ -11,19 +11,33 @@ get_header(); ?>
 	
 	<div class="att_bio_wrapper">
 		
-		<div class="att_header">
+		<div class="internal_header">
 			
 			<h1><?php the_title();?></h1>
 			
-			<div class="att_meta">
+			<div class="header_meta">
 				
-				<span><?php the_field( 'position' ); ?></span>
-				<span><?php the_field( 'year_began' ); ?></span>
-				<span><?php the_field( 'city_location' ); ?></span>
+				<?php if(get_field('position')) : ?>
 				
-			</div><!-- att_meta -->
+					<span><?php the_field( 'position' ); ?></span>
+				
+				<?php endif;?>
+				
+				<?php if(get_field('year_began')) : ?>
+				
+					<span><?php the_field( 'year_began' ); ?></span>
+				
+				<?php endif;?>
+				
+				<?php if(get_field('city_location')) : ?>
+				
+					<span><?php the_field( 'city_location' ); ?></span>
+				
+				<?php endif;?>
+				
+			</div><!-- header_meta -->
 			
-		</div><!-- att_header -->
+		</div><!-- internal_header -->
 		
 		<div class="att_bio_inner">
 		
@@ -62,7 +76,7 @@ get_header(); ?>
 					
 					<?php else:?>
 					
-					<img src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
+					<img class="att_profile_mobile" src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
 				
 				<?php endif; ?>
 				

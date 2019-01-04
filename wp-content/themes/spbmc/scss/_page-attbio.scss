@@ -4,44 +4,14 @@
 .att_bio_wrapper {
 	max-width:1415px;
 	margin:0px auto;
-	padding-top:150px;
 	width:100%;
 }
 
-.att_header {
-	text-align: center;
-	h1 {
-		color:$blue;
-		font-size: 90px;
-		font-family: $prata;
-		text-transform: uppercase;
-		line-height: 110px;
-		letter-spacing: 0.25em;
-	}
-	.att_meta {
-		display: flex;
-		justify-content: center;
-		margin-top:28px;
-		span {
-			text-transform: uppercase;
-			font-size:24px;
-			letter-spacing: 0.35em;
-			font-family: $poppins;
-			font-weight: 800;
-			color:$bluedark;
-			&:after {
-				content:"+";
-				margin:0 17px;
-				color:$gold;
-			}
-			&:last-of-type {
-				&:after {
-					display: none;
-				}
-			}
-		}
-	}
-}
+
+
+
+
+
 
 
 .att_bio_inner {
@@ -239,20 +209,11 @@ img.att_profile_mobile {
 	
 	
 	.att_bio_wrapper {
-		padding-top: 81px;
+		
 	}
 	
 	
-	.att_header {
-		h1 {
-			font-size:65px;
-			line-height: 81px;
-			letter-spacing: 0.15em;
-		}
-		.att_meta {
-			margin-top: 14px;
-		}
-	}
+	
 	
 	.att_bio_inner {
 		margin: 23px 0 0;
@@ -328,27 +289,10 @@ img.att_profile_mobile {
 @media screen and (max-width: 767px) {
 	
 	
-	.att_header {
-		h1 {
-			font-size:52px;
-			line-height: 64px;
-			letter-spacing: 0.1em;
-		}
-		.att_meta {
-			margin-top: 20px;
-			span {
-				font-size: 13px;
-				letter-spacing: 0.24em;
-				&:after {
-					margin: 0 7px;
-					
-				}
-			}
-		}
-	}
+	
 	
 	.att_bio_wrapper {
-		padding-top: 50px;
+		
 	}
 	    
 	

@@ -433,7 +433,62 @@ $('.close').on('click', function(e) {
    	
   }
   
+  
+  // meet the team wrapper
+  
+  
+ // hides the divider on the previous tab 
+ 
+ 
+ $('.meet_team_selector ul li').on('mouseover', function(e) {
+   
+ 		$(this).prev('li').addClass('hide');
+ 
+ });
+ 
+ 
+ $('.meet_team_selector ul li').on('mouseout', function(e) {
+   
+ 		$(this).prev('li').removeClass('hide');
+ 
+ });
+ 
 
-
+ // meet team hardcoded tabs
+  
+  
+ $('.meet_team_selector ul li').on('click', function(e) {
+	 
+	 
+	 $('.meet_team_selector ul li').removeClass('active');
+   
+   $(this).addClass('active');
+   
+   $('.meet_team_selector ul li').prev('li').removeClass('hide');
+   
+   $(this).prev('li').addClass('hide');
+   
+   
+   $('.meet_team_selector ul li.active').on('mouseout', function(e) {
+   
+ 		$(this).prev('li').addClass('hide');
+ 
+ 	
+ 	});
+   
+   
+   
+   var dataTab = $(this).attr('data-tab');
+   
+   $('.tab').fadeOut(300);
+   
+   $('.'+dataTab).delay(600).fadeIn(400);
+   
+  });
+  
+	
+	
+ 
+	
   
 }); // document ready
