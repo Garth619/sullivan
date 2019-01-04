@@ -18,19 +18,29 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	
+	<div class="single_blog_post">
 		
-	<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+		<h2 class="blog_post_title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2><!-- blog_post_title -->
 		
-	<?php $pfx_date = get_the_date(); echo $pfx_date ?>
+		<div class="blog_meta">
 			
-	<?php echo get_the_category_list();?>
+			<?php $pfx_date = get_the_date(); echo $pfx_date ?>
 			
-	<?php echo wp_trim_words( get_the_content(), 54, '...' );?>
+			<?php echo get_the_category_list();?>
 			
-	<?php edit_post_link( __( 'Edit'), '', '' ); ?>
-
+		</div><!-- blog_meta -->
+		
+		<div class="blog_content">
 			
+			<?php echo wp_trim_words( get_the_content(), 44, '...' );?>
+			
+		</div><!-- blog_content -->
+		
+		<a class="continue_reading" href="">Continue Reading</a><!-- continue_reading -->
+		
+		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
+		
+	</div><!-- single_blog_post -->		
 		
 <?php endwhile; // end of loop ?>
 
