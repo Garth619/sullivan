@@ -142,7 +142,7 @@ h1,h2,h3,h4 {
 	
 }
 
-body:not(.page-template-template-bio) {
+body.page-template-default {
 	.content {
 		p:first-of-type:first-letter {
 			font-size: 100px;
