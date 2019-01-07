@@ -1,0 +1,105 @@
+
+.about_page_wrapper {
+	display: flex;
+	max-width:1500px;
+	margin:0 auto;
+	padding:8px 0;
+}
+
+
+.about_left {
+	flex-shrink:0;
+	flex-basis:772px;
+	.image_caption_wrapper {
+		position: relative;
+		img {
+			max-width:100%;
+			height:auto;
+			display: block;
+		}
+		.image_caption {
+			position: absolute;
+			bottom:65px;
+			right:0;
+			text-align: right;
+			width: 281px;
+			div {
+				line-height: 49px;
+				background: $blue;
+				text-transform: uppercase;
+				color:#fff;
+				font-family: $poppins;
+				font-weight:700;
+				letter-spacing: 0.05em;
+				padding: 10px 22px;
+				font-size:18px;
+				display: inline;
+			}
+		}
+	}
+}
+
+
+.about_right {
+	padding:0 0px 0 30px;
+	h1 {
+		color:$blue;
+		font-size:90px;
+		font-family: $prata;
+		margin-bottom:45px;
+	}
+}
+
+
+
+.about_blockquote {
+	max-width:1415px;
+	margin:0 auto;
+	width:100%;
+	border:1px solid $gold;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin:227px auto 0;
+	padding:0px 45px 115px;
+	img {
+		margin:-90px 0 0;
+		width:247px;
+	}
+	.about_blockquote_content {
+		text-align: center;
+		max-width:880px;
+		margin:0 auto;
+		font-family: $prata;
+		font-size:28px;
+		line-height: 50px;
+		color:$blue;
+		padding-top:20px;
+	}
+}
+
+
+.about_bottom {
+	max-width:1420px;
+	margin:160px auto 0;
+	column-count:2;
+	column-gap:138px;
+}
+
+
+.about_awards_title_wrapper {
+	margin-bottom: 89px;
+}
+
+
+.about_slider_wrapper {
+	max-width:1445px;
+	margin:152px auto 0;
+	padding-bottom:35px;
+	.att_awards_slideshow {
+		 max-width: 1300px;
+	}
+}
+
+
+   
