@@ -366,6 +366,17 @@
 		"oAP": "/images/img-contact",
 		"oF": 0
 		},
+	"/images/img-contact.jpg": {
+		"ft": 16384,
+		"iS": 115626,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/img-contact.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/logo-blue-SPBMC.svg": {
 		"ft": 2097152,
 		"miP": 0,

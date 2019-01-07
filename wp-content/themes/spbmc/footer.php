@@ -28,77 +28,33 @@
 		
 		<div class="location_inner">
 			
-			<div class="single_location">
+			<?php if(get_field('footer_locations','option')): ?>
+			 
+				<?php while(has_sub_field('footer_locations','option')): ?>
+			 
+						<div class="single_location">
 				
-				<span class="location_title">New York</span><!-- location_title -->
+							<span class="location_title"><?php the_sub_field( 'firm_title' ); ?></span><!-- location_title -->
 				
-				<span class="address">120 Broadway, 18th Floor<br/> New York, NY 10271</span><!-- address -->
+							<span class="address"><?php the_sub_field( 'firm_street_address' ); ?></span><!-- address -->
 				
-				<a class="directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- directions -->
+							<a class="directions" href="<?php the_sub_field( 'firm_directions_link' ); ?>" target="_blanl" rel="noopener">Get Directions</a><!-- directions -->
 				
-				<span class="phone_title">Phone</span><!-- phone_title -->
+							<span class="phone_title">Phone</span><!-- phone_title -->
 				
-				<a class="location_phone" href="">(212) 732-9000</a><!-- location_phone -->
+							<a class="location_phone" href=""><?php the_sub_field( 'firm_phone' ); ?></a><!-- location_phone -->
 				
-				<span class="phone_title">Fax</span><!-- phone_title -->
+							<span class="phone_title">Fax</span><!-- phone_title -->
 				
-				<a class="location_phone" href="">(212) 266-4141</a><!-- location_phone -->
+							<a class="location_phone" href=""><?php the_sub_field( 'firm_fax' ); ?></a><!-- location_phone -->
 				
-			</div><!-- single_location -->
+						</div><!-- single_location -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
 			
-			<div class="single_location">
-				
-				<span class="location_title">Garden City</span><!-- location_title -->
-				
-				<span class="address">1140 Franklin Avenue, Suite 200<br/> Garden City, NY 11530</span><!-- address -->
-				
-				<a class="directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- directions -->
-				
-				<span class="phone_title">Phone</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(516) 742-0707</a><!-- location_phone -->
-				
-				<span class="phone_title">Fax</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(516) 742-7350</a><!-- location_phone -->
-				
-			</div><!-- single_location -->
 			
-			<div class="single_location">
-				
-				<span class="location_title">cuthogue</span><!-- location_title -->
-				
-				<span class="address">33105 Main Road<br/> Cutchogue, NY 11935</span><!-- address -->
-				
-				<a class="directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- directions -->
-				
-				<span class="phone_title">Phone</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(631) 734-2500</a><!-- location_phone -->
-				
-				<span class="phone_title">Fax</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(631) 734-2502</a><!-- location_phone -->
-				
-			</div><!-- single_location -->
-			
-			<div class="single_location">
-				
-				<span class="location_title">hackensack</span><!-- location_title -->
-				
-				<span class="address">126 State Street<br/> Hackensack, NJ 07601</span><!-- address -->
-				
-				<a class="directions" href="" target="_blank" rel="noopener">Get Directions</a><!-- directions -->
-				
-				<span class="phone_title">Phone</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(201) 342-0037</a><!-- location_phone -->
-				
-				<span class="phone_title">Fax</span><!-- phone_title -->
-				
-				<a class="location_phone" href="">(201) 342-6461</a><!-- location_phone -->
-				
-			</div><!-- single_location -->
 			
 		</div><!-- location_inner -->
 		
