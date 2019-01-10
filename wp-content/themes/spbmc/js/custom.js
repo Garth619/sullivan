@@ -338,7 +338,17 @@ $('.about_page_slideshow').slick({
   slidesToScroll: 1,
 	arrows:false,
 	fade:true,
-	dots:true
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1270,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //adaptiveHeight: true
+      }
+   }
+	]
  });
 
  

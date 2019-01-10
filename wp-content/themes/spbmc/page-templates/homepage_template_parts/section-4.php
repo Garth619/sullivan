@@ -6,7 +6,9 @@
 			
 			<div class="sec_four_left_inner">
 				
-				<img src="<?php bloginfo('template_directory');?>/images/ico-city.svg"/>
+				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/ico-city.svg"/>
+				
+				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/ico-city-mobile.svg"/>
 				
 				<span class="client_title">What Our Clients Say</span><!-- client_title -->
 				
@@ -76,6 +78,34 @@
 		
 	</div><!-- sec_four_left -->
 	
-	<div class="sec_four_right"></div><!-- sec_four_right -->
+	<div class="sec_four_right">
+		
+		<span class="sec_four_pa_title">Practice Areas</span><!-- sec_four_pa_title -->
+		
+		<div class="pa_lists">
+			
+			<ul>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+			</ul>
+			
+			<ul>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+				<li><a href="">Practice Area</a></li>
+			</ul>
+			
+		</div><!-- pa_lists -->
+		
+		<a class="button pa_button" href="">View All Practice Areas</a>
+		
+	</div><!-- sec_four_right -->
 	
 </section><!-- section_four -->
