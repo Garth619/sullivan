@@ -97,7 +97,7 @@ get_header(); ?>
 				
 				<div class="att_awards_button_left att_awards_button"></div><!-- att_awards_button -->
 				
-				<div class="att_awards_slideshow">
+				<div class="about_page_slideshow logo_slideshow">
 					
 					<?php if(get_field('about_awards')): ?>
 					 

@@ -58,12 +58,18 @@ get_header(); ?>
 				
 				
 				<ul>
-					<li class="pa_title">Practice Areas</li>
-					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
-					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
-					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
-					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
-					<li class="pa_list"><a  href="">Plaintiff’s Personal Injury</a></li>
+					<li class="pa_title"><?php the_field( 'attorney_sidebar_title' ); ?></li>
+					
+					<?php if(get_field('practice_areas_sidebar')): ?>
+					 
+						<?php while(has_sub_field('practice_areas_sidebar')): ?>
+					 
+							<li class="pa_list"><a  href="<?php the_sub_field( 'pa_page_link' ); ?>"><?php the_sub_field( 'pa_title' ); ?></a></li>
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+					
 				</ul>
 				
 			</div><!-- att_sidebar -->
@@ -165,7 +171,7 @@ get_header(); ?>
 				
 				<div class="att_awards_button_left att_awards_button"></div><!-- att_awards_button -->
 				
-				<div class="att_awards_slideshow">
+				<div class="att_awards_slideshow logo_slideshow">
 					
 					<?php if(get_field('attorney_awards')): ?>
 					 

@@ -295,6 +295,52 @@ $('.att_awards_slideshow').slick({
  });
  
 
+$('.about_page_slideshow').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+	arrows:true,
+	prevArrow:".att_awards_button_left",
+	nextArrow:".att_awards_button_right",
+	dots:false,
+	responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+   },
+   {
+      breakpoint: 1205,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+   },
+   {
+      breakpoint: 895,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+   }
+	]
+ });
+ 
+ 
+ 
+ 
+ 
+ $('.sec_four_test_slideshow').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	fade:true,
+	dots:true
+ });
+
  
 
 	
