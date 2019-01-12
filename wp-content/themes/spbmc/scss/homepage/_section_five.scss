@@ -1,5 +1,6 @@
 #section_five {
 	margin:164px 0;
+	overflow: hidden;
 }
 
 
@@ -51,6 +52,15 @@
 
 .sec_five_image_one {
 	margin-right:27px;
+	img {
+		display: block;
+	}
+}
+
+.sec_five_image_two {
+	img {
+		display: block;
+	}
 }
 
 
@@ -101,5 +111,166 @@
 }
 
 
+@media screen and (max-width: 1675px) {
+	
+	
+	
+	.sec_five_image_wrapper {
+		margin-left:-100px;
+	}
+	
+	
+	
+} /* Media Query */
 
+
+
+@media screen and (max-width: 1575px) {
+	
+	
+	.sec_five_image_wrapper {
+		margin-left:-197px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	.sec_five_image_wrapper {
+		margin-top: 140px;
+	}
+	
+	
+	.sec_five_image_one, .sec_five_image_two {
+		img {
+			height:544px;
+		}
+	}
+	
+	.sec_five_image_one {
+		margin-right: 23px;
+	}
+	
+	
+	.sec_five_image_cap {
+		.est_wrapper {
+    	margin-top: 33px;
+   	}
+	}
+	
+	    
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1375px) {
+	
+	
+	.sec_five_image_wrapper {
+    margin-left: -237px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1330px) {
+	
+	
+	.sec_five_image_wrapper {
+    margin-left: -255px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1310px) {
+	
+	.sec_five_image_wrapper {
+    margin-left: -310px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1260px) {
+	
+	
+	.sec_five_image_wrapper {
+    margin-left: -360px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1200px) {
+	
+	.sec_five_image_wrapper {
+    margin-left: -390px;
+	}
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 1175px) {
+	
+	
+	.sec_five_image_one {
+		margin-right:0;
+	}
+	
+	.sec_five_image_two {
+		display: none;
+	}	
+	
+	
+	.sec_five_image_cap {
+		.est_wrapper {
+			 margin-left: 31px;
+			 margin-top: 46px;
+		}
+	}
+	
+	
+	   
+	
+	
+} /* Media Query */
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	.sec_five_image_one {
+		display: none;
+	}
+	
+	.sec_five_image_wrapper {
+		margin-left:0;
+	}
+	
+	.sec_five_blue_cap {
+		margin-left:0;
+	}
+	
+	.sec_five_image_cap {
+		.est_wrapper {
+			 margin-left: 0px;
+		}
+	}
+	
+	
+} /* Media Query */
 
