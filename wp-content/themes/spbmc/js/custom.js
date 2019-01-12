@@ -268,6 +268,26 @@ jQuery(document).ready(function($){
 
 
 
+$('.small_header').slick({
+  infinite: true,
+  mobileFirst:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	arrows:false,
+	dots:false,
+	fade:true,
+	autoplay:true,
+	responsive: [
+    {
+      breakpoint: 768,
+      settings: "unslick",
+   }
+	]
+ });
+
+
+
+
 $('.att_awards_slideshow').slick({
   infinite: true,
   slidesToShow: 4,

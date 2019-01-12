@@ -12,6 +12,8 @@
 		
 		<div class="sec_five_content top content">
 			
+			<a class="button mobile_pa_button" href="">View All Practice Areas</a>
+			
 			<p>Aliquam eget ullamcorper magna. Nam id convallis turpis. Mauris porta diam augue. Sed sit amet nisl nec arcu mollis faucibus tempor id ante. Curabitur commodo vestibulum nulla at lacinia. Cras venenatis, massa et imperdiet ultrices, ante nisl imperdiet magna, nec mollis ante nisl vitae eros. Curabitur consequat facilisis lectus a consequat. Aliquam erat volutpat. Sed est lacus, egestas a risus posuere, pharetra elementum risus. Maecenas ullamcorper tortor ac eros adipiscing, ac commodo purus varius. Curabitur placerat nec leo quis porta.</p>
 
 			<h2>Nullam tempus orci lacus sit amet itels scelerisque ligula vestibulum vitae lacus sit amet itels scelerisque ligula vestibulum</h2>
@@ -50,9 +52,7 @@
 				
 				<div class="sec_five_blue_cap">
 				
-				<span>We have some of the Most</span>
-				<span>Well-known + Experienced Trial</span>
-				<span>Attorneys in the State.</span>
+				<span>We have some of the Most<br/> Well-known + Experienced Trial Attorneys in the State.</span>
 				
 			</div><!-- sec_five_blue_cap -->
 				

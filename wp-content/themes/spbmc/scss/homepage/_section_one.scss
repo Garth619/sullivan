@@ -250,11 +250,16 @@ a.sec_one_click {
 	
 .sec_one_inner {
 	padding: 118px 0 0;
+	height:100%;
 	.large_header {
-		
+		max-width: 390px;
+		line-height:30px;
+		margin-left:auto;
+		margin-right:auto;
 		span {
 			font-size: 50px;
 			line-height: 60px;
+			display: inline;
 		}
 	}
 	.small_header {
@@ -282,11 +287,14 @@ a.sec_one_click {
 
 
 a.sec_one_click {
-  margin: 71px 0 0;
+  margin:0;
   padding-left:0;
   padding-right:0;
   width:100%;
   letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 1px;
+  left:0;
 }
 	
 	
