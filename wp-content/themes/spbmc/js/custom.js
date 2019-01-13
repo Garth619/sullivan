@@ -287,18 +287,17 @@ $('.small_header').slick({
 
 
 
-
-
-
-
-
 $('.sec_two_slidehow').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 4,
 	arrows:false,
 	dots:true,
-	responsive: [
+	customPaging : function(slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a>'+('0'+(i+1)).slice(-2)+'</a>';
+  },
+  responsive: [
     {
       breakpoint: 1066,
       settings: {
@@ -316,7 +315,11 @@ $('.sec_two_slidehow').slick({
 	]
  });
  
-
+ 
+ 
+ $('#section_two ul.slick-dots').wrap('<div class="mywrap"></div>');
+ 
+ $('.mywrap').append('<span class="slick_line"></span>');
 
 
 

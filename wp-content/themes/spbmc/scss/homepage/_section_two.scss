@@ -17,7 +17,77 @@
 
 
 .sec_two_slidehow {
-	
+	.slick-dots {
+		text-align: left;
+		position: static;
+		li.slick-active {
+			button {
+				&:before {
+					
+				}
+			}
+		}
+		li:hover {
+			button {
+				&:before {
+					
+				}
+			}
+		}
+		li.slick-active {
+			a {
+				color:$gold;
+			}
+		}
+		li {
+			margin:0;
+			width:auto;
+			height:auto;
+			margin-right:15px;
+			a {
+				color:$bluedark;
+				font-size:30px;
+				font-family: $poppins;
+				font-size: 16px;
+				letter-spacing: 0.1em;
+				padding:0;
+				width:auto;
+				font-weight: 700;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
+			}
+		}
+	}
+}
+
+.mywrap {
+	display: flex;
+	align-items: center;
+	margin:46px 0 0;
+	.slick-dots {
+		width:auto;
+		flex-shrink: 0;
+	}
+	span.slick_line {
+		display: block;
+		flex-grow:1;
+		width:100%;
+		height:1px;
+		background: $bluedark;
+	}
+}
+
+span.disclaimer {
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+	font-size:12px;
+	letter-spacing: 0.15em;
+	font-family: $poppins;
+	font-weight: 700;
+	margin-top:34px;
 }
 
 
