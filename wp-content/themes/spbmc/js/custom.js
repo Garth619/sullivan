@@ -299,17 +299,28 @@ $('.sec_two_slidehow').slick({
   },
   responsive: [
     {
-      breakpoint: 1066,
+      breakpoint: 1595,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
       }
    },
    {
-      breakpoint: 767,
+      breakpoint: 1240,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+   },
+   {
+      breakpoint: 1066,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots:false,
+        arrows:true,
+        prevArrow:".sec_two_button_left",
+				nextArrow:".sec_two_button_right",
       }
    }
 	]
@@ -320,6 +331,33 @@ $('.sec_two_slidehow').slick({
  $('#section_two ul.slick-dots').wrap('<div class="mywrap"></div>');
  
  $('.mywrap').append('<span class="slick_line"></span>');
+ 
+ 
+ 
+ 	
+
+ 
+ 
+ 
+ 	function sectwoslide() {
+     
+     if (windowWidth < 1067) {
+         
+       
+     	$('.sec_two_single_slide').on('click', function(e) {
+ 	  
+ 				$(this).toggleClass('open');
+ 	
+ 			});
+     	   		
+     		
+     } 
+     
+  
+  };
+ 	
+ 
+ sectwoslide();
 
 
 
