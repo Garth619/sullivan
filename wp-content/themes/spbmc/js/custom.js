@@ -288,6 +288,38 @@ $('.small_header').slick({
 
 
 
+
+
+
+
+$('.sec_two_slidehow').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+	arrows:false,
+	dots:true,
+	responsive: [
+    {
+      breakpoint: 1066,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+   }
+	]
+ });
+ 
+
+
+
+
 $('.att_awards_slideshow').slick({
   infinite: true,
   slidesToShow: 4,
