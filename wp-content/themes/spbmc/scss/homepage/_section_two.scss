@@ -380,7 +380,7 @@ span.disclaimer {
   
   span.disclaimer {
 	 margin: 45px auto 0;
-	 max-width: 250px;
+	 max-width: 265px;
 	 line-height: 20px;
   }
   
@@ -397,6 +397,25 @@ span.disclaimer {
   
   
       
+	
+	
+} /* Media Query */
+
+
+
+
+@media screen and (max-width: 375px) {
+	
+	
+	.sec_two_single_slide {
+		.sec_two_single_inner {
+			.sec_two_border {
+				span.amount {
+					font-size: 54px;
+   			}
+			}
+		}
+	} 
 	
 	
 } /* Media Query */

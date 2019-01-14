@@ -300,3 +300,21 @@ a.sec_one_click {
 	
 	
 } /* Media Query */
+
+
+@media screen and (max-width: 395px) {
+	
+	
+	.sec_one_inner {
+		padding: 63px 0 0;
+		.large_header {
+    	max-width: 300px;
+    }	
+   }
+	
+	
+	
+	
+	
+} /* Media Query */
+

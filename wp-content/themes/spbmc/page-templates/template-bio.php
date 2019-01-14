@@ -124,7 +124,7 @@ get_header(); ?>
 				
 					<?php while(has_sub_field('attorney_bullet_list_h3')): ?>
 				 
-						<div class="verdict_inner">
+						<div class="verdict_inner second_part">
 					
 							<h3><?php the_sub_field( 'title' ); ?></h3>
 					
@@ -205,13 +205,7 @@ get_header(); ?>
 	
 </div><!-- container -->
 
-
-
 </div><!-- internal_main -->
 
-
-
-	<?php // get_template_part( 'loop', 'page' ); ?>
-					 
 					 	
 <?php get_footer(); ?>

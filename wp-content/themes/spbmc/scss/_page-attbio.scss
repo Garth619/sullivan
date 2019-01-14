@@ -65,17 +65,21 @@
 .blockquote_wrapper {
 	margin-bottom:65px;
 	blockquote {
-		padding-bottom: 11px;
+		padding-bottom: 14px;
     padding-top: 38px;
 	}
 	.blockquote_meta {
 		text-align: center;
+		line-height: 23px;
 		span {
 			text-transform: uppercase;
 			font-size:13px;
 			letter-spacing: 0.3em;
 			font-family: $poppins;
 			font-weight: 800;
+		
+			width:100%;
+			line-height: 16px;
 			&:last-of-type {
 				&:after {
 					display: none;
@@ -106,7 +110,14 @@
 		ul {
 			margin-bottom:28px;
 			li {
-			
+				margin-bottom: 35px;
+			}
+		}
+	}
+	.verdict_inner.second_part {
+		ul {
+			li {
+				margin-bottom:0;
 			}
 		}
 	}
@@ -326,5 +337,20 @@ img.att_profile_mobile {
 	img.att_profile_mobile {
 		margin: 0px auto 36px;
   }
+  
+  
+  .blockquote_wrapper {
+	  margin-bottom: 55px;
+	  blockquote {
+		  padding-bottom: 29px;
+	  }
+	  .blockquote_meta {
+		  span {
+			  
+		  }
+	  }
+  }
+  
+  
 	
 } /* Media Query */

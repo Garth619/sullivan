@@ -98,11 +98,16 @@
 
 .about_slider_wrapper {
 	max-width:1445px;
-	margin:152px auto 0;
+	margin: 127px auto 0;
 	padding-bottom:35px;
 	.att_awards_slideshow {
 		 max-width: 1300px;
 	}
+}
+
+
+.about_page_slideshow {
+	max-width: 1250px;
 }
 
 
@@ -162,7 +167,7 @@
 	
 	
 	.about_page_slideshow {
-		 max-width: 800px;
+		 max-width: 1200px;
 	}
 	   
 	
@@ -237,7 +242,7 @@
 	    
 	    
 	.att_awards_slideshow_wrapper {
-		max-width:600px;
+		max-width:800px;
 		margin-left:auto;
 		margin-right:auto;
 	}
@@ -250,9 +255,13 @@
 	
 	
 	.about_page_slideshow {
-    max-width: 520px;
+    max-width: 360px;
 	}
 	
+	
+	.att_awards_slideshow_wrapper {
+		max-width: 540px;
+	}
 	
 	
 	
