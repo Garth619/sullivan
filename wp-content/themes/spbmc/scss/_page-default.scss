@@ -105,7 +105,14 @@
 			}
 		}
 		ul.menu {
-			
+			> li.current-menu-ancestor {
+				> a {
+					color:$goldlight;
+				}
+				ul.sub-menu {
+					display: block;
+				}
+			}
 			>li.menu-item-has-children {
 				> a {
 						position: relative;
@@ -121,6 +128,7 @@
 						}
 				}
 				> a.open {
+					color:$goldlight;
 					&:after {
 						content:"-";
 					}
@@ -143,6 +151,11 @@
 		ul.sub-menu {
 			display: none;
 			margin: 28px 0 0;
+			> li.current-menu-item {
+				 a {
+					 color:$goldlight;
+				 }
+			}
 			> li {
 					text-transform: none;
 					font-weight: 500;

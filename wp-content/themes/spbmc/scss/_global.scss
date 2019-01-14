@@ -139,13 +139,16 @@ h1,h2,h3,h4 {
 		line-height: 49px;
 		text-align: center;
 		padding: 43px 0 75px;
+		> p {
+			margin-bottom:0;
+		}
 	}
 	
 }
 
 body.page-template-default {
 	.content {
-		p:first-of-type:first-letter {
+		> p:first-of-type:first-letter {
 			font-size: 100px;
 			font-family: $prata;
 			font-size: 100px;

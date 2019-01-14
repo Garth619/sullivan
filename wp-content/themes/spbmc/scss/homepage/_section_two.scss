@@ -86,7 +86,7 @@ span.disclaimer {
 	text-align: right;
 	text-transform: uppercase;
 	font-size:12px;
-	letter-spacing: 0.15em;
+	letter-spacing: 0.17em;
 	font-family: $poppins;
 	font-weight: 700;
 	margin-top:34px;
@@ -156,7 +156,7 @@ span.disclaimer {
 	padding:25px;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 200ms ease-in-out;
+	transition: all 400ms ease-in-out;
 }
 
 .sec_two_hover_inner {
@@ -191,10 +191,10 @@ span.disclaimer {
 	
 #section_two {
 	.slick-slide {
-    margin: 0 15px;
+    //margin: 0 25px;
   }
   .slick-list {
-    margin: 0 -15px;
+   //margin: 0 -25px;
   }
 }
 	

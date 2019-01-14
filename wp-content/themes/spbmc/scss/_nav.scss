@@ -128,13 +128,14 @@ nav {
 			}
 		}
 		ul.menu {
+			
 			> li.menu-item-has-children {
 					> a {
-						&:hover {
-							&:after {
-								color:$blue;
+							&:hover {
+								&:after {
+									color:$blue;
+								}
 							}
-						}
 						}
 					> a {
 						&:after {
@@ -144,14 +145,19 @@ nav {
 							margin-left:5px;
 						}
 					}
+					> a.open {
+							&:after {
+								content:"-";
+							}
+					}
 					
 				}
 			> li.current-menu-ancestor {
 					> a {
-						color:$blue;
+						
 						&:after {
-							content:"+";
-							color:$blue;
+							//content:"-";
+							//color:$blue;
 						}
 					}
 			}

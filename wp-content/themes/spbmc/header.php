@@ -116,7 +116,7 @@
 				
 				<span class="mobile">Call For a Free Consultation</span><!-- mobile -->
 				
-				<a href="tel:<?php the_field( 'firm_main_phone', 'option' ); ?>"><?php the_field( 'firm_main_phone', 'option' ); ?></a>
+				<a href="tel:<?php echo str_replace(['-', '(', ')', ' '], '', get_field('firm_main_phone', 'option')); ?>"><?php the_field( 'firm_main_phone', 'option' ); ?></a>
 				
 			</div><!-- consult_phone_wrapper -->
 			
