@@ -8,485 +8,59 @@
 			
 			<div class="sec_two_slidehow">
 				
-				<div class="sec_two_single_slide">
+				<?php if(get_field('sec_two_case_results')): ?>
+				 
+					<?php while(has_sub_field('sec_two_case_results')): ?>
+				 
+						<div class="sec_two_single_slide">
 					
-					<div class="sec_two_single_inner">
+							<div class="sec_two_single_inner">
 						
-						<div class="sec_two_border">
+								<div class="sec_two_border">
+									
+									<?php if(get_sub_field('case_results_svg') == "Verdict One"):?>
 							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
+									
+									<?php endif;?>
+									
+									<?php if(get_sub_field('case_results_svg') == "Verdict Two"):?>
 							
-							<span class="amount">$61.6m</span><!-- amount -->
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-03.svg"/>
+									
+									<?php endif;?>
+									
+									<?php if(get_sub_field('case_results_svg') == "Settlement"):?>
 							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-02.svg"/>
+									
+									<?php endif;?>
 							
-						</div><!-- sec_two_border -->
+									<span class="amount"><?php the_sub_field( 'amount' ); ?></span><!-- amount -->
+							
+									<span class="type"><?php the_sub_field( 'type' ); ?></span><!-- type -->
+							
+								</div><!-- sec_two_border -->
 						
-					</div><!-- sec_two_single_inner -->
+							</div><!-- sec_two_single_inner -->
 					
-					<div class="sec_two_hover">
+							<div class="sec_two_hover">
 						
-						<div class="sec_two_hover_inner">
+								<div class="sec_two_hover_inner">
 							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
+								<span class="sec_two_content"><?php the_sub_field( 'description' ); ?></span><!-- sec_two_content -->
 							
-							<a class="view_all" href="">View All Results</a>
+								<a class="view_all" href="<?php the_field( 'section_two_case_result_page_link' ); ?>">View All Results</a>
 							
 							</div><!-- sec_two_hover_inner -->
 						
-					</div><!-- sec_two_hover -->
+						</div><!-- sec_two_hover -->
 					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
-				
-				<div class="sec_two_single_slide">
-					
-					<div class="sec_two_single_inner">
-						
-						<div class="sec_two_border">
-							
-							<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
-							
-							<span class="amount">$61.6m</span><!-- amount -->
-							
-							<span class="type">Twin Brain Damaged at Birth</span><!-- type -->
-							
-						</div><!-- sec_two_border -->
-						
-					</div><!-- sec_two_single_inner -->
-					
-					<div class="sec_two_hover">
-						
-						<div class="sec_two_hover_inner">
-							
-							<span class="sec_two_content">Recovered in VCF awards for our clients, from both the first VCF (2002-2004) and since the VCF reopened in 2011.</span><!-- sec_two_content -->
-							
-							<a class="view_all" href="">View All Results</a>
-							
-							</div><!-- sec_two_hover_inner -->
-						
-					</div><!-- sec_two_hover -->
-					
-				</div><!-- sec_two_single_slide -->
+					</div><!-- sec_two_single_slide -->
+				    
+					<?php endwhile; ?>
+				 
+				<?php endif; ?>
 								
 				
 			</div><!-- sec_two_slidehow -->
@@ -495,7 +69,7 @@
 			
 		</div><!-- sec_two_slideshow_wrapper -->
 		
-		<span class="disclaimer">*these results do not guarantee a similar outcome</span>
+		<span class="disclaimer"><?php the_field( 'section_two_disclaimer' ); ?></span>
 		
 	</div><!-- sec_two_inner -->
 	

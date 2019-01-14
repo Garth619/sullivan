@@ -68,11 +68,29 @@
 			
 			<a href="<?php bloginfo('url');?>">
 				
-				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/logo-white-gold.svg"/>
+				<?php $desktop_logo = get_field( 'desktop_logo', 'option' ); ?>
 				
-				<img class="tablet" src="<?php bloginfo('template_directory');?>/images/logo-blue.svg"/>
+				<?php if ( $desktop_logo ) { ?>
 				
-				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/logo-stacked.svg"/>
+				<img class="desktop" src="<?php echo $desktop_logo['url']; ?>" alt="<?php echo $desktop_logo['alt']; ?>" />
+				
+				<?php } ?>
+				
+				<?php $tablet_logo = get_field( 'tablet_logo', 'option' ); ?>
+
+				<?php if ( $tablet_logo ) { ?>
+				
+				<img class="tablet" src="<?php echo $tablet_logo['url']; ?>" alt="<?php echo $tablet_logo['alt']; ?>" />
+				
+				<?php } ?>
+	
+				<?php $mobile_logo = get_field( 'mobile_logo', 'option' ); ?>
+				
+				<?php if ( $mobile_logo ) { ?>
+				
+				<img class="mobile" src="<?php echo $mobile_logo['url']; ?>" alt="<?php echo $mobile_logo['alt']; ?>" />
+				
+				<?php } ?>
 				
 			</a>
 			
@@ -98,7 +116,7 @@
 				
 				<span class="mobile">Call For a Free Consultation</span><!-- mobile -->
 				
-				<a href="tel:(212) 732-9000">(212) 732-9000</a>
+				<a href="tel:<?php the_field( 'firm_main_phone', 'option' ); ?>"><?php the_field( 'firm_main_phone', 'option' ); ?></a>
 				
 			</div><!-- consult_phone_wrapper -->
 			
@@ -132,7 +150,7 @@
 				
 				<span class="mobile">Call For a Free Consultation</span><!-- mobile -->
 				
-				<a href="tel:(212) 732-9000">(212) 732-9000</a>
+				<a href="tel:<?php the_field( 'firm_main_phone', 'option' ); ?>"><?php the_field( 'firm_main_phone', 'option' ); ?></a>
 				
 			</div><!-- consult_phone_wrapper -->
 		
@@ -148,7 +166,13 @@
 				
 				<a class="" href="<?php bloginfo('url');?>">
 					
-					<img src="<?php bloginfo('template_directory');?>/images/logo-white-gold-stacked.svg"/>
+					<?php $desktop_logo_navigation = get_field( 'desktop_logo_navigation', 'option' ); ?>
+					
+					<?php if ( $desktop_logo_navigation ) { ?>
+					
+					<img src="<?php echo $desktop_logo_navigation['url']; ?>" alt="<?php echo $desktop_logo_navigation['alt']; ?>" />
+					
+					<?php } ?>
 					
 				</a>
 				

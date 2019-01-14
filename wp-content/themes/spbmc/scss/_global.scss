@@ -119,6 +119,7 @@ h1,h2,h3,h4 {
 		}
 	a {
 		color:$blue;
+		cursor: pointer;
 		font-weight: 600;
 		//text-decoration: none;
 		padding-bottom:0px;
@@ -149,12 +150,15 @@ body.page-template-default {
 			font-family: $prata;
 			font-size: 100px;
 			float: left;
-			color:$blue;
+			color:$gold;
 			line-height: 83px;
 			padding: 21px 15px 0 13px;
 		}
 	}
 }
+
+
+
 
 
 @media screen and (max-width: 1066px) {

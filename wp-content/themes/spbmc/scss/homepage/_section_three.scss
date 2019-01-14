@@ -1,0 +1,278 @@
+#section_three {
+	width:100%;
+	padding:145px 88px 0;
+}
+
+.sec_three_inner {
+	h1 {
+		font-size:116px;
+		line-height: 130px;
+		font-family: $prata;
+		color:$bluedark;
+		max-width:930px;
+		margin:0 auto;
+		text-align: center;
+	}
+}
+
+.sec_three_content.content {
+	max-width:978px;
+	margin:95px auto;
+	p:first-of-type:first-letter {
+		font-size: 120px !important;
+		font-family: $prata;
+		font-size: 100px;
+		float: left;
+		color:$gold !important;
+		line-height: 83px;
+		padding: 21px 15px 0 13px;
+	}
+}
+
+.sec_three_blue_cap {
+	width:282px;
+	margin-top:27px;
+	margin-left:-53px;
+	line-height: 47px;
+	text-align: right;
+	span {
+		background: $blue;
+		text-transform: uppercase;
+		color:#fff;
+		font-family: $poppins;
+		font-weight:700;
+		letter-spacing: 0.05em;
+		padding: 8px 27px;
+		font-size:18px;
+		box-decoration-break: clone;
+		
+ // -webkit-box-decoration-break: clone;
+	}
+}
+
+
+
+
+.sec_three_awards_wrapper {
+	margin:123px auto 150px;
+	max-width:1705px;
+}
+
+.sec_three_awards_title_wrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom:103px;
+	span {
+		display: block;
+	}
+	span.line {
+		width:100%;
+		height:1px;
+		background:#878594;
+		display: block;
+		flex-grow:1;
+	}
+	span.att_title {
+		flex-shrink: 0;
+		text-transform: uppercase;
+		color:$gold;
+		font-family: $poppins;
+		font-weight: 800;
+		font-size:14px;
+		letter-spacing: 0.3em;
+		padding:0 33px;
+	}
+}
+
+
+.sec_three_awards_slideshow_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width:1670px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.sec_three_awards_button {
+	flex-basis:29px;
+	height:49px;
+	flex-shrink:0;
+	position: relative;
+	cursor: pointer;
+	&:hover {
+		&:before, &:after {
+			background:$gold;
+		}
+	}
+	&:before, &:after {
+		content:"";
+		display: block;
+		width:34px;
+		height:3px;
+		background:$bluedark;
+		position: absolute;
+		top:24px;
+		left:3px;
+		transform-origin: 0px 0px 0px;
+		transition: all 200ms ease-in-out;
+	}
+	&:before {
+		transform: rotate(-45deg);
+	}
+	&:after {
+		transform: rotate(45deg);
+	}
+}
+
+.sec_three_awards_button_right {
+	transform: rotate(-180deg);
+}
+
+.sec_three_slideshow {
+	width:calc(100% - 66px);
+	max-width: 1460px;
+	height:180px;
+}
+
+.att_single_slide {
+	img {
+		display: block;
+		margin:0 auto;
+		max-width:100%;
+		height:auto;
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	
+	
+	
+	.sec_three_awards_wrapper {
+    margin: 123px auto 168px;
+	}
+	
+	.sec_three_awards_title_wrapper {
+    margin-bottom: 101px;
+  }
+  
+  
+  .sec_three_awards_button {
+   	margin-top: -49px;
+	}
+	
+	.sec_three_awards_slideshow_wrapper {
+		 max-width: 1108px;
+		     
+	}
+	
+	
+	.sec_three_slideshow {
+    max-width: 970px;
+  }
+	
+	   
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 1180px) {
+	
+	#section_three {
+		padding: 117px 60px 0;
+	}
+	
+	.sec_three_inner {
+		h1 {
+			font-size:80px;
+			line-height: 100px;
+			max-width: 680px;
+		}
+	}
+	
+	
+	.sec_three_awards_wrapper {
+    margin: 105px auto 125px;
+	}
+	
+	.sec_three_awards_title_wrapper {
+    margin-bottom: 89px;
+	}	
+	
+	.sec_three_content.content {
+    margin: 67px auto;
+	}
+	
+	.sec_three_awards_button {
+		margin-top:0;
+	}
+	
+	.sec_three_awards_slideshow_wrapper {
+    max-width: 818px;
+	}
+	
+	.sec_three_slideshow {
+    max-width: 660px;
+	}
+	
+	
+	
+} /* Media Query */
+
+
+
+@media screen and (max-width: 767px) {
+	
+	#section_three {
+    padding: 68px 32px 0;
+	}
+	
+	.sec_three_inner {
+		h1 {
+			font-size:60px;
+			line-height: 65px;
+			max-width: 400px;
+		}
+	}
+	
+	
+.sec_three_content.content {
+	
+	p:first-of-type:first-letter {
+		font-size: 90px !important;
+		line-height: 73px;
+    padding: 18px 15px 0 8px;
+
+	}
+}
+
+.sec_three_awards_wrapper {
+    margin: 0 auto 57px;
+	}
+
+.sec_three_awards_title_wrapper {
+	margin-bottom: 56px;
+	span.line {
+		background: transparent;
+	}
+}
+
+.sec_three_awards_button {
+	margin-top:10px;
+}
+	
+
+.sec_three_awards_slideshow_wrapper {
+   max-width: 458px;
+}
+	
+	
+	.sec_three_slideshow {
+    max-width: 220px;
+	}
+	
+	
+} /* Media Query */

@@ -10,32 +10,28 @@
 		
 		<div class="large_header">
 			
-			<span class="top_line">New York Personal</span>
+			<span class="top_line"><?php the_field( 'header_one' ); ?></span>
 			
-			<span class="top_line">Injury Attorneys</span>
+			<span class="top_line"><?php the_field( 'header_two' ); ?></span>
 		
 		</div><!-- large_header -->
 		
 		<div class="small_header">
 			
-			<div class="small_header_single">
+			<?php if(get_field('sec_one_bullets')): ?>
+			 
+				<?php while(has_sub_field('sec_one_bullets')): ?>
+			 
+					<div class="small_header_single">
 				
-				<span>Spare no Expense</span>     
+						<span><?php the_sub_field( 'bullet' ); ?></span>     
 				
-			</div><!-- small_header_single -->
-			
-			<div class="small_header_single">
-				
-				<span>Over $2 billion Recovered </span>     
-				
-			</div><!-- small_header_single -->
-			
-			<div class="small_header_single">
-				
-				<span>Experienced Attorneys</span>     
-				
-			</div><!-- small_header_single -->
-			
+					</div><!-- small_header_single -->
+			    
+				<?php endwhile; ?>
+			 
+			<?php endif; ?>
+						
 		</div><!-- small_header -->
 		
 		<a class="sec_one_click button" href="#consultation">Click For Free Consultation</a>

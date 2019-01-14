@@ -361,6 +361,44 @@ $('.sec_two_slidehow').slick({
 
 
 
+
+$('.sec_three_slideshow').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+	arrows:true,
+	prevArrow:".sec_three_awards_button_left",
+	nextArrow:".sec_three_awards_button_right",
+	dots:false,
+	responsive: [
+    {
+      breakpoint: 1450,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+   },
+   {
+      breakpoint: 1066,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+   },
+   {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+   }
+	]
+ });
+
+
+
+
+
 $('.att_awards_slideshow').slick({
   infinite: true,
   slidesToShow: 4,
@@ -432,6 +470,10 @@ $('.about_page_slideshow').slick({
 	arrows:false,
 	fade:true,
 	dots:true,
+	customPaging : function(slider, i) {
+    var thumb = $(slider.$slides[i]).data();
+    return '<a>'+('0'+(i+1)).slice(-2)+'</a>';
+  },
 	responsive: [
     {
       breakpoint: 1270,

@@ -73,9 +73,8 @@ nav {
 			flex-shrink:0;
 			padding-left:8%;
 			img {
-				width:100%;
-				max-width:455px;
-				height:auto;
+				width:455px;
+				height:144px;
 				display: block;
 				margin:0 auto;
 			}
@@ -167,7 +166,8 @@ nav {
 			&:first-of-type {
 				padding-left:0;
 				img {
-					max-width: 395px;
+					width: 395px;
+					height:144px;
 				}
 			}
 		}

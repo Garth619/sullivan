@@ -53,25 +53,26 @@
 	.slick-dots {
 		bottom: -153px;
 		li.slick-active {
-			button {
+			a {
 				color:$blue;
 			}
 		}
 		li:hover {
-			button {
+			a {
 				color:$blue;
 			}
 		}
 		li {
-			margin: 0 5px;
+			margin: 0 9px;
 			width:16px;
-			button {
+			a {
 				width:14px;
 				font-size:14px;
 				color:#fff;
 				font-family: $poppins;
 				font-weight: 700;
 				letter-spacing: 0.1em;
+				transition: all 200ms ease-in-out;
 				&:before {
 					display: none;
 				}
