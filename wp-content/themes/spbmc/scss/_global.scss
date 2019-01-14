@@ -161,7 +161,20 @@ body.page-template-default {
 }
 
 
-
+@media screen and (max-width: 1450px) {
+	
+	
+	.content {
+		blockquote {
+			padding: 32px 0 59px;
+		}
+	}
+	    
+	
+	
+	
+	
+} /* Media Query */
 
 
 @media screen and (max-width: 1066px) {

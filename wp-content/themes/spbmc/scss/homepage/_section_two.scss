@@ -215,6 +215,21 @@ span.disclaimer {
 } /* Media Query */
 
 
+@media screen and (max-width: 1450px) {
+	
+#section_two {
+	.slick-slide {
+    margin: 0 15px;
+  }
+  .slick-list {
+   margin: 0 -15px;
+  }
+}
+	
+	
+} /* Media Query */
+
+
 @media screen and (max-width: 1066px) {
 	
 	#section_two {
