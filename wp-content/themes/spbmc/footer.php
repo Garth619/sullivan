@@ -6,6 +6,8 @@
 			
 			<div class="form_border">
 				
+				<div class="form_inner">
+				
 				<div class="form_max_width">
 			
 				<span class="form_header"><?php the_field( 'free_case_form_title', 'option' ); ?></span><!-- form_header -->
@@ -17,6 +19,8 @@
 				<?php gravity_form(1, false, false, false, '', true, 12); ?>
 				
 				</div><!-- form_max_width -->
+				
+				</div><!-- form_inner -->
 			
 			</div><!-- form_border -->
 			

@@ -78,9 +78,15 @@
 		padding:20px;
 		background: $bluedark;
 	}
+	.sidebar_border {
+		width:100%;
+		height:100%;
+		background: $bluedark;
+		padding: 60px 41px 113px 55px;
+	}
 	.sidebar_inner {
-		border:1px solid $gold;
-		padding:60px;
+		background: $goldgreadient;
+		padding:1px;
 		height: 100%;
 		ul {
 			list-style: none;
@@ -125,7 +131,7 @@
 					font-weight: 800;
 					font-size: 14px;
 					letter-spacing: 0.2em;
-					margin-bottom:58px;
+					margin-bottom: 57px;
 					&:last-of-type {
 						margin-bottom:0;
 					}
@@ -136,13 +142,13 @@
 		}
 		ul.sub-menu {
 			display: none;
-			margin:33px 0 0;
+			margin: 28px 0 0;
 			> li {
 					text-transform: none;
 					font-weight: 500;
 					font-size:16px;
 					letter-spacing: 0.05em;
-					margin-bottom:35px;
+					margin-bottom: 35px;
 					&:last-of-type {
 						margin-bottom:0;
 					}
@@ -238,6 +244,9 @@ body.page-template-template-meetteam {
 		order:2;
 		margin:40px 0 0;
 		flex-basis:auto;
+		.sidebar_border {
+			padding-bottom:60px;
+		}
 	}
 	
 	
@@ -341,6 +350,10 @@ body.page-template-template-meetteam {
 	
 	.sidebar_wrapper {
 		margin: 25px 0 0;
+		.sidebar_border {
+			padding-left:30px;
+			padding-right:30px;
+		}
 	}
 	
 	

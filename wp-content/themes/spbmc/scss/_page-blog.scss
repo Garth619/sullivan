@@ -105,12 +105,16 @@ a.continue_reading {
 }
 
 
-.sidebar_wrapper {
+.sidebar_wrapper.blog {
 	.sidebar {
 		
 	}
+	.sidebar_border {
+		padding: 65px 55px 0px;
+	}
 	.sidebar_inner {
 		font-family: $poppins;
+		
 		h3 {
 			color:$gold;
 			text-transform: uppercase;
@@ -143,3 +147,19 @@ a.continue_reading {
 		}
 	}
 }
+
+
+
+@media screen and (max-width: 767px) {
+	
+	
+	
+	.sidebar_wrapper.blog {
+		.sidebar_border {
+			padding-left:30px;
+			padding-right:30px;
+		}
+	}
+	
+	
+} /* Media Query */
