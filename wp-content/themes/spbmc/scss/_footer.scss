@@ -296,6 +296,10 @@ a.location_button.button {
 				text-decoration: none;
 				color:$blue;
 				display: inline-block;
+				transition: all 200ms ease-in-out;
+				&:hover {
+					color:$gold;
+				}
 				&:after {
 					content:"";
 					width:2px;

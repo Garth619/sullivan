@@ -8,9 +8,9 @@
 				
 				<div class="form_max_width">
 			
-				<span class="form_header">Free Case Evaluation</span><!-- form_header -->
+				<span class="form_header"><?php the_field( 'free_case_form_title', 'option' ); ?></span><!-- form_header -->
 			
-				<span class="small_form_header">Our fee is on a contingency basis. If we don’t recover money for you, we will never charge you. If you are unable to come to any of our offices, we are happy to visit you at home or in the hospital.</span><!-- small_form_header -->
+				<span class="small_form_header"><?php the_field( 'free_case_verbiage', 'option' ); ?></span><!-- small_form_header -->
 			
 				<span class="required">*Field Required</span><!-- required -->
 			
@@ -58,7 +58,7 @@
 			
 		</div><!-- location_inner -->
 		
-		<a class="button location_button" href="">View All Locations</a>
+		<a class="button location_button" href="<?php the_field( 'view_all_locations_link', 'option' ); ?>">View All Locations</a>
 		
 	</div><!-- location_wrapper -->
 	
@@ -69,11 +69,26 @@
 			<div class="copyright_col">
 				
 				<ul class="copyright">
-					<li>Copyright &copy; 2018 - SPBMC,P.C.</li>
+					<li><?php the_field( 'copyright', 'option' ); ?></li>
 					<li>
-						<a href="">Disclaimer</a>
-						<a href="">Sitemap</a>
-						<a href="">Google+</a>
+					<?php if(get_field('copyright_bullets','option')): ?>
+					 
+						<?php while(has_sub_field('copyright_bullets','option')): ?>
+						
+							<?php if(get_sub_field('open_in_new_tab') == "Yes") : ?>
+					 
+								<a href="<?php the_sub_field( 'page_link' ); ?>" target="_blank" rel="noopener"><?php the_sub_field( 'title' ); ?></a>
+								
+								<?php else:?>
+								
+								<a href="<?php the_sub_field( 'page_link' ); ?>"><?php the_sub_field( 'title' ); ?></a>
+							
+							<?php endif;?>
+					    
+						<?php endwhile; ?>
+					 
+					<?php endif; ?>
+
 					</li>
 				</ul>
 				
@@ -83,7 +98,13 @@
 				
 				<a class="" href="<?php bloginfo('url');?>">
 					
-					<img data-src="<?php bloginfo('template_directory');?>/images/logo-blue-spbmc.svg"/>
+					<?php $footer_logo = get_field( 'footer_logo', 'option' ); ?>
+					
+					<?php if ( $footer_logo ) { ?>
+					
+					<img data-src="<?php echo $footer_logo['url']; ?>" alt="<?php echo $footer_logo['alt']; ?>" />
+					
+					<?php } ?>
 					
 				</a>
 				
@@ -93,7 +114,7 @@
 				
 				<a class="ilawyer" href="//ilawyermarketing.com" target="_blank" rel="noopener">
 					
-					<img data-src="<?php bloginfo('template_directory');?>/images/ilawyer.svg"/>
+					<img data-src="<?php bloginfo('template_directory');?>/images/ilawyer.svg" alt="iLawyer Marketing Logo"/>
 					
 				</a>
 				
