@@ -15,9 +15,9 @@ get_header(); ?>
 			
 			<div class="header_meta">
 				
-				<span>Jury Verdicts</span>
+				<span><?php the_field( 'cr_verdicts' ); ?></span>
 				
-				<span>Settlements</span>
+				<span><?php the_field( 'cr_settlements' ); ?></span>
 				
 			</div><!-- header_meta -->
 			
