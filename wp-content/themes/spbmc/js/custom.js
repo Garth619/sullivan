@@ -707,6 +707,44 @@ $('.close').on('click', function(e) {
   
 	
 	
+	
+	// case results 
+	
+	
+/*
+		function mobileCaseresults() {
+	    
+	    if (windowWidth < 768) {
+	        
+	      
+	    } 
+	    
+	  
+		};
+		
+	
+		mobileCaseresults();
+*/
+	
+	
+	
+	$('span.top_level_tab_title').on('click', function(e) {
+		  
+		$(this).next('ul.second_level').slideToggle(400);
+					
+		$(this).toggleClass('active');
+					
+	});
+	
+	
+	$('span.tab_title').on('click', function(e) {
+		  
+			$(this).next('.tab_title_content').slideToggle(400);
+					
+			$(this).toggleClass('active');
+					
+	});
+	
  
 	
   
