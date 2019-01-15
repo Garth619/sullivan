@@ -1,0 +1,60 @@
+body.page-template-template-caseresults {
+	.internal_header {
+		margin: 90px 0 0;
+		padding:118px 0 0;
+		.header_meta {
+			margin-top: 20px;
+		}
+	}
+	.two_col {
+    max-width: 1705px;
+  }
+}
+
+
+
+
+.case_results_tabs {
+	ul {
+		list-style: none;
+		margin:0;
+		li {
+			font-family: $poppins;
+		}
+	}
+}
+
+
+
+ul.top_level {
+	li.top_level_tab {
+		span.top_level_tab_title {
+			background: $bluedark;
+			display: flex;
+			padding:30px 60px 30px 40px;
+			position: relative;
+			
+			> span {
+					font-weight: 800;
+					font-size:14px;
+					letter-spacing: 0.2em;
+					text-transform: uppercase;
+					display: block;
+					line-height: 18px;
+					@include mytextgradient;
+					&:after {
+						content:"+";
+						position: absolute;
+						top:30px;
+						right:28px;
+						font-size: 20px;
+						font-weight: 700;
+						@include mytextgradient;
+					}
+				}
+		}
+		ul.second_level {
+			
+		}
+	}
+}

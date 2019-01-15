@@ -437,6 +437,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/map_pin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/map_pin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/images/pattern_tile.png": {
 		"ft": 32768,
 		"iS": 12385,
@@ -641,6 +651,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "/page-templates/homepage_template_parts/section-2.php",
+		"oF": 0
+		},
+	"/page-templates/homepage_template_parts/section-3.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/page-templates/homepage_template_parts/section-3.php",
 		"oF": 0
 		},
 	"/page-templates/homepage_template_parts/section-4.php": {
