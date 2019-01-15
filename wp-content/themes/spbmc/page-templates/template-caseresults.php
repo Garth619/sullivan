@@ -21,26 +21,47 @@ get_header(); ?>
 				
 			</div><!-- header_meta -->
 			
-		</div><!-- internal_header -->
+	</div><!-- internal_header -->
 
 	<div class="container two_col">
 	
 	
-	<div class="sidebar_wrapper">
+	<div class="sidebar_wrapper case_results">
 	
 		<div class="sidebar">
 	
 			<div class="sidebar_inner">
 			
 				<div class="sidebar_border">
-		
-					<ul class="menu">
-						<li><a>Landmark Cases</a></li>
-						<li><a>Landmark Cases</a></li>
-						<li><a>Landmark Cases</a></li>
-						<li><a>Landmark Cases</a></li>
-						<li><a>Landmark Cases</a></li>
-					</ul>
+					
+					
+					<?php if(get_field('case_results_page')): ?>
+						
+						<ul class="menu">
+					 
+						<?php while(has_sub_field('case_results_page')): ?>
+						
+						
+							<?php 
+								
+								$sidebartitle = get_sub_field('top_level_title');
+								
+								$rules[] = ",";
+								$rules[] = " ";
+								$rules[] = "'";
+						
+								$datatag = (str_replace($rules, "-", strtolower($sidebartitle))); 
+						
+								echo '<li data-caseresult="' . $datatag . '">' . $sidebartitle . '</li>';?>
+					 
+							
+					    
+						<?php endwhile; ?>
+						
+						</ul><!-- menu -->
+					 
+					<?php endif; ?>
+					
 			
 				</div><!-- sidebar_border -->
 		
@@ -54,199 +75,75 @@ get_header(); ?>
 	<div class="content_wrapper">
 		
 		
-		<div class="case_results_tabs">
+		<?php if(get_field('case_results_page')): ?>
 		
-		<ul class="top_level">
-			
-			
-			
-			
-			<li class="top_level_tab">
+			<div class="case_results_tabs">
+		
+				<ul class="top_level">
+		 
+				<?php while(has_sub_field('case_results_page')): ?>
 				
-				<span class="top_level_tab_title">
-				
-					<span>Landmark Cases</span>
-				
-				</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
+					<?php 
+								
+						$sidebartitle = get_sub_field('top_level_title');
+								
+						$rules[] = ",";
+						$rules[] = " ";
+						$rules[] = "'";
+						
+						$datatag = (str_replace($rules, "-", strtolower($sidebartitle))); 
+						
+					?>
+		 
+					<li class="top_level_tab">
 					
-					<li class="secondary_tab">
+						<span class="top_level_tab_title">
+				
+							<span><?php the_sub_field( 'top_level_title' ); ?></span>
+				
+						</span><!-- top_level_tab_title -->
 						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
+						<?php if(get_sub_field('second_level')): ?>
 							
-						</span><!-- tab_title -->
+								<ul class="second_level">
+						 
+								<?php while(has_sub_field('second_level')): ?>
+						 
+									<li class="secondary_tab <?php echo $datatag;?>">
 						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
+										<span class="tab_title">
 						
-						</div><!-- tab_title -->
+											<span><?php the_sub_field( 'second_level_title' ); ?></span>
+							
+										</span><!-- tab_title -->
+						
+										<div class="tab_title_content content">
+							
+											<span class="tab_amount"><?php the_sub_field( 'amount' ); ?></span><!-- tab_amount -->
+							
+											<?php the_sub_field( 'content' ); ?>
+						
+										</div><!-- tab_title_content -->
 					
-					</li><!-- secondary_tab -->
+									</li><!-- secondary_tab -->
+						    
+								<?php endwhile; ?>
+								
+								</ul><!-- second_level -->
+						 
+						<?php endif; ?>
 					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
-							
-						</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
-							
-						</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
+					</li><!-- top_level_tab -->
+		    
+				<?php endwhile; ?>
+			
+				</ul><!-- top_level -->
 				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-			
-			
-			
-			
-						
-			<li class="top_level_tab">
-				
-				<span class="top_level_tab_title">
-				
-					<span>Landmark Cases</span>
-				
-				</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
-							
-						</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-
-						
-			
-			
-			
-			<li class="top_level_tab">
-				
-				<span class="top_level_tab_title">
-				
-					<span>Landmark Cases</span>
-				
-				</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
-							
-						</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-			
-			
-			
-			
-			<li class="top_level_tab">
-				
-				<span class="top_level_tab_title">
-				
-					<span>Landmark Cases</span>
-				
-				</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">
-						
-							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
-							
-						</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-
-			
-						
-			
-						
-			
-			
-		</ul><!-- top_level -->
+			</div><!-- case_results_tabs -->
+		 
+		<?php endif; ?>
 		
 		
-		</div><!-- case_results_tabs -->
-
 	</div><!-- content_wrapper -->
 	
 	

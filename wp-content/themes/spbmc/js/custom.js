@@ -533,8 +533,6 @@ $('.gform_wrapper ul li').on('click', function(e) {
 // current page
 
 
-
-
 function checkNavdesktop() {
     
     if (windowWidth > 1201) {
@@ -711,23 +709,7 @@ $('.close').on('click', function(e) {
 	// case results 
 	
 	
-/*
-		function mobileCaseresults() {
-	    
-	    if (windowWidth < 768) {
-	        
-	      
-	    } 
-	    
-	  
-		};
-		
-	
-		mobileCaseresults();
-*/
-	
-	
-	
+
 	$('span.top_level_tab_title').on('click', function(e) {
 		  
 		$(this).next('ul.second_level').slideToggle(400);
@@ -744,6 +726,26 @@ $('.close').on('click', function(e) {
 			$(this).toggleClass('active');
 					
 	});
+	
+	
+	// sidebar
+	
+
+  $('.case_results ul.menu li').on('click', function(e) {
+    
+  	
+  	var crTab = $(this).attr('data-caseresult');
+		
+		$('.secondary_tab').fadeOut(300);
+		
+		$('.secondary_tab.'+crTab).delay(600).fadeIn(400);
+		
+		
+		$('.secondary_tab').removeClass('active');
+		
+		$(this).addClass('active');
+  
+  });
 	
  
 	
