@@ -73,7 +73,11 @@ get_header(); ?>
 					
 					<li class="secondary_tab">
 						
-						<span class="tab_title">$4.5 Million - Brain Injury At Birth</span>
+						<span class="tab_title">
+						
+							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
+							
+						</span><!-- tab_title -->
 						
 						<span class="tab_amount">$4.5M</span><!-- tab_title -->
 						

@@ -30,16 +30,16 @@ ul.top_level {
 	li.top_level_tab {
 		span.top_level_tab_title {
 			background: $bluedark;
-			display: flex;
+			display: block;
 			padding:30px 60px 30px 40px;
 			position: relative;
-			
+			width:100%;
 			> span {
 					font-weight: 800;
 					font-size:14px;
 					letter-spacing: 0.2em;
 					text-transform: uppercase;
-					display: block;
+					display: inline-block;
 					line-height: 18px;
 					@include mytextgradient;
 					&:after {
@@ -54,7 +54,12 @@ ul.top_level {
 				}
 		}
 		ul.second_level {
-			
+			li.secondary_tab {
+				span.tab_title {
+					display: block;
+					background: #f6f4f5;
+				}
+			}
 		}
 	}
 }
