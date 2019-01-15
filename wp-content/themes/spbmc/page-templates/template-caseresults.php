@@ -79,9 +79,81 @@ get_header(); ?>
 							
 						</span><!-- tab_title -->
 						
-						<span class="tab_amount">$4.5M</span><!-- tab_title -->
+						<div class="tab_title_content content">
+							
+							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
+							
+							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
+						
+						</div><!-- tab_title -->
+					
+					</li><!-- secondary_tab -->
+				
+				</ul><!-- second_level -->
+			
+			</li><!-- top_level_tab -->
+			
+			
+			
+			
+						
+			<li class="top_level_tab">
+				
+				<span class="top_level_tab_title">
+				
+					<span>Landmark Cases</span>
+				
+				</span><!-- top_level_tab_title -->
+			
+				<ul class="second_level">
+					
+					<li class="secondary_tab">
+						
+						<span class="tab_title">
+						
+							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
+							
+						</span><!-- tab_title -->
 						
 						<div class="tab_title_content content">
+							
+							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
+							
+							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
+						
+						</div><!-- tab_title -->
+					
+					</li><!-- secondary_tab -->
+				
+				</ul><!-- second_level -->
+			
+			</li><!-- top_level_tab -->
+
+						
+			
+			
+			
+			<li class="top_level_tab">
+				
+				<span class="top_level_tab_title">
+				
+					<span>Landmark Cases</span>
+				
+				</span><!-- top_level_tab_title -->
+			
+				<ul class="second_level">
+					
+					<li class="secondary_tab">
+						
+						<span class="tab_title">
+						
+							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
+							
+						</span><!-- tab_title -->
+						
+						<div class="tab_title_content content">
+							
+							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
 							
 							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
 						
@@ -98,17 +170,25 @@ get_header(); ?>
 			
 			<li class="top_level_tab">
 				
-				<span class="top_level_tab_title">Landmark Cases</span><!-- top_level_tab_title -->
+				<span class="top_level_tab_title">
+				
+					<span>Landmark Cases</span>
+				
+				</span><!-- top_level_tab_title -->
 			
 				<ul class="second_level">
 					
 					<li class="secondary_tab">
 						
-						<span class="tab_title">$4.5 Million - Brain Injury At Birth</span>
+						<span class="tab_title">
 						
-						<span class="tab_amount">$4.5M</span><!-- tab_title -->
+							<span><strong>$4.5 Million</strong> - Brain Injury At Birth</span>
+							
+						</span><!-- tab_title -->
 						
 						<div class="tab_title_content content">
+							
+							<span class="tab_amount">$4.5M</span><!-- tab_amount -->
 							
 							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
 						
@@ -119,76 +199,11 @@ get_header(); ?>
 				</ul><!-- second_level -->
 			
 			</li><!-- top_level_tab -->
-			
-			
-			
-			
-			
-			<li class="top_level_tab">
-				
-				<span class="top_level_tab_title">Landmark Cases</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">$4.5 Million - Brain Injury At Birth</span>
-						
-						<span class="tab_amount">$4.5M</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-			
-			
-			
-			
-			
-			<li class="top_level_tab">
-				
-				<span class="top_level_tab_title">Landmark Cases</span><!-- top_level_tab_title -->
-			
-				<ul class="second_level">
-					
-					<li class="secondary_tab">
-						
-						<span class="tab_title">$4.5 Million - Brain Injury At Birth</span>
-						
-						<span class="tab_amount">$4.5M</span><!-- tab_title -->
-						
-						<div class="tab_title_content content">
-							
-							<p>In favor of our client, a newborn, and against the hospital which failed to render treatment to the infant who was having breathing difficulties. The infant had a normal delivery but developed problems breathing in the nursery despite observations by the nurse which indicated respiratory problems. No doctor arrived to assist the child, resulting in a mild case of cerebral palsy. The jury held that the child’s brain damage was a result of medical malpractice.</p>
-						
-						</div><!-- tab_title -->
-					
-					</li><!-- secondary_tab -->
-				
-				</ul><!-- second_level -->
-			
-			</li><!-- top_level_tab -->
-			
-			
-			
-						
-								
-			
-			
-					
-			
+
 			
 						
 			
-			
-			
+						
 			
 			
 		</ul><!-- top_level -->
