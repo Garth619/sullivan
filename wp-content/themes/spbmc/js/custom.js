@@ -741,7 +741,7 @@ $('.close').on('click', function(e) {
 		$('.secondary_tab.'+crTab).delay(600).fadeIn(400);
 		
 		
-		$('.secondary_tab').removeClass('active');
+		$('.case_results ul.menu li').removeClass('active');
 		
 		$(this).addClass('active');
   
