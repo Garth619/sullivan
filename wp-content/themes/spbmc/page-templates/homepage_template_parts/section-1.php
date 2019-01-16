@@ -1,8 +1,6 @@
 <section id="section_one">
 	
-	<img class="desktop hero" src="<?php bloginfo('template_directory');?>/images/hero.jpg"/>
-	
-	<img class="tablet hero" src="<?php bloginfo('template_directory');?>/images/hero-ipad.jpg"/>
+	<img class="desktop hero" src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg"/>
 	
 	<span class="trackline"></span><!-- trackline -->
 	

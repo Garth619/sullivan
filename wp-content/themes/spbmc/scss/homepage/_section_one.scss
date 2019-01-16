@@ -108,7 +108,7 @@ a.sec_one_click {
 @media screen and (max-width: 1450px) {
 	
 img.hero {
-	object-position:-70px 0;
+	//object-position:-70px 0;
 }
 	
 	
@@ -166,9 +166,10 @@ img.hero {
 
 
 img.hero {
-	object-position:12% 0;
+	//object-position:12% 0;
 }
 
+/*
 img.desktop.hero {
 	display: none;
 }
@@ -176,6 +177,7 @@ img.desktop.hero {
 img.tablet.hero {
 	display: block;
 }
+*/
 
 	
 .sec_one_inner {
@@ -226,7 +228,7 @@ a.sec_one_click {
 	
 	
 	img.hero {
-		object-position: -200px 0;
+		object-position: -20px 0;
 	}
 
 	
@@ -244,7 +246,7 @@ a.sec_one_click {
 	height: 510px;
 	img.hero {
 		height: 429px;
-		object-position:50% 0px;
+		//object-position:50% 0px;
 	}
 }
 	

@@ -1,8 +1,6 @@
 <section id="section_five">
 	
-	
-		
-		<div class="sec_five_header">
+	<div class="sec_five_header">
 			
 			<span class="top"><?php the_field( 'section_five_header_one' ); ?></span>
 			<span class="middle"><?php the_field( 'section_five_header_two' ); ?></span>
@@ -22,28 +20,15 @@
 			
 			<div class="sec_five_image_one">
 			
-				<?php $section_five_image_one = get_field( 'section_five_image_one' ); ?>
+				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/content02_img_desk.jpg"/>
 				
-				<?php if ( $section_five_image_one ) { ?>
+				<img class="tablet" src="<?php bloginfo('template_directory');?>/images/content02_img_lap.jpg"/>
 				
-				<img src="<?php echo $section_five_image_one['url']; ?>" alt="<?php echo $section_five_image_one['alt']; ?>" />
-				
-				<?php } ?>
-			
+				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/content02_img_mob.jpg"/>
+							
 			</div><!-- sec_five_image -->
 			
-			<div class="sec_five_image_two">
-			
-				<?php $section_five_image_two = get_field( 'section_five_image_two' ); ?>
-				
-				<?php if ( $section_five_image_two ) { ?>
-				
-				<img src="<?php echo $section_five_image_two['url']; ?>" alt="<?php echo $section_five_image_two['alt']; ?>" />
-				
-				<?php } ?>
-				
-			</div><!-- sec_five_image -->
-			
+						
 			<div class="sec_five_image_cap">
 				
 				<div class="est_wrapper">
