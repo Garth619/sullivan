@@ -19,12 +19,18 @@
 		<div class="sec_five_image_wrapper">
 			
 			<div class="sec_five_image_one">
-			
-				<img class="desktop" src="<?php bloginfo('template_directory');?>/images/content02_img_desk.jpg"/>
 				
-				<img class="tablet" src="<?php bloginfo('template_directory');?>/images/content02_img_lap.jpg"/>
+				<?php $section_five_desktop_image = get_field( 'section_five_desktop_image' ); ?>
+
+				<img class="desktop" data-src="<?php echo $section_five_desktop_image['url']; ?>" alt="<?php echo $section_five_desktop_image['alt']; ?>" />
+
+				<?php $section_five_tablet_image = get_field( 'section_five_tablet_image' ); ?>
 				
-				<img class="mobile" src="<?php bloginfo('template_directory');?>/images/content02_img_mob.jpg"/>
+				<img class="tablet" data-src="<?php echo $section_five_tablet_image['url']; ?>" alt="<?php echo $section_five_tablet_image['alt']; ?>" />
+				
+				<?php $section_five_mobile_image = get_field( 'section_five_mobile_image' ); ?>
+				
+				<img class="mobile" data-src="<?php echo $section_five_mobile_image['url']; ?>" alt="<?php echo $section_five_mobile_image['alt']; ?>" />
 							
 			</div><!-- sec_five_image -->
 			

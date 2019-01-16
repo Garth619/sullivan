@@ -1,6 +1,12 @@
 <section id="section_one">
 	
-	<img class="desktop hero" src="<?php bloginfo('template_directory');?>/images/header_img_desk.jpg"/>
+	
+	<?php $section_one_image = get_field( 'section_one_image' ); ?>
+	
+	<?php $section_one_image_webp = get_field( 'section_one_image_webp' ); ?>
+
+	<img class="desktop hero" data-jpg="<?php echo $section_one_image['url']; ?>" data-webp="<?php echo $section_one_image_webp['url']; ?>" alt="<?php echo $section_one_image['alt']; ?>"/>
+	
 	
 	<span class="trackline"></span><!-- trackline -->
 	
