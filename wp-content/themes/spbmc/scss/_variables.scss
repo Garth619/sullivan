@@ -22,6 +22,14 @@ $goldgreadient: linear-gradient(41deg, #e5c28f 1%,#c79b5d 100%);
 }
 
 
+@mixin mytextgradientfallback {
+   background-image:none;
+   color:$goldlight;
+	 -webkit-background-clip: none;
+	 -webkit-text-fill-color: transparent;
+}
+
+
 // fonts
 
 

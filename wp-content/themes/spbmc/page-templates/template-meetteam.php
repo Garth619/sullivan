@@ -56,7 +56,7 @@ get_header(); ?>
 					
 							<?php else:?>
 					
-							<img src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
+							<img class="placeholder" src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
 				
 						<?php endif; ?>
 					
@@ -111,7 +111,7 @@ get_header(); ?>
 					
 							<?php else:?>
 					
-							<img src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
+							<img class="placeholder" src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
 				
 						<?php endif; ?>
 					
@@ -168,7 +168,7 @@ get_header(); ?>
 					
 							<?php else:?>
 					
-							<img src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
+							<img class="placeholder" src="<?php bloginfo('template_directory');?>/images/profile-placeholder.jpg"/>
 				
 						<?php endif; ?>
 					

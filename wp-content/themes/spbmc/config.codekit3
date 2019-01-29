@@ -465,11 +465,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/images/logo-blue-SPBMC.svg": {
+	"/images/logo-blue-spbmc.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/images/logo-blue-SPBMC.svg",
+		"oAP": "/images/logo-blue-spbmc.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -609,6 +609,46 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/images/results-auto.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/results-auto.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/results-crane.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/results-crane.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/results-police.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/results-police.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/images/results-tree.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/images/results-tree.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -634,6 +674,16 @@
 		"oAP": "/js/custom-min.js",
 		"oF": 0,
 		"sC": 0,
+		"tS": 0
+		},
+	"/js/gravityforms-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/gravityforms-min-min.js",
+		"oF": 0,
+		"sC": 3,
 		"tS": 0
 		},
 	"/js/gravityforms.js": {

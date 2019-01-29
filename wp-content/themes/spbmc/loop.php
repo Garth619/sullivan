@@ -36,7 +36,7 @@
 			
 		</div><!-- blog_content -->
 		
-		<a class="continue_reading" href="">Continue Reading</a><!-- continue_reading -->
+		<a class="continue_reading" href="<?php the_permalink();?>">Continue Reading</a><!-- continue_reading -->
 		
 		<?php edit_post_link( __( 'Edit'), '', '' ); ?>
 		

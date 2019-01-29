@@ -18,15 +18,33 @@
 						
 								<div class="sec_two_border">
 									
-									<?php if(get_sub_field('case_results_svg') == "Verdict One"):?>
+									<?php if(get_sub_field('case_results_svg') == "Verdict Health"):?>
 							
 										<img data-src="<?php bloginfo('template_directory');?>/images/results-01.svg"/>
 									
 									<?php endif;?>
 									
-									<?php if(get_sub_field('case_results_svg') == "Verdict Two"):?>
+									<?php if(get_sub_field('case_results_svg') == "Verdict Fire"):?>
 							
 										<img data-src="<?php bloginfo('template_directory');?>/images/results-03.svg"/>
+									
+									<?php endif;?>
+									
+									<?php if(get_sub_field('case_results_svg') == "Verdict Crane"):?>
+							
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-crane.svg"/>
+									
+									<?php endif;?>
+									
+									<?php if(get_sub_field('case_results_svg') == "Verdict Police"):?>
+							
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-police.svg"/>
+									
+									<?php endif;?>
+									
+									<?php if(get_sub_field('case_results_svg') == "Verdict Tree"):?>
+							
+										<img data-src="<?php bloginfo('template_directory');?>/images/results-tree.svg"/>
 									
 									<?php endif;?>
 									

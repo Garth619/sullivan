@@ -747,7 +747,14 @@ $('.close').on('click', function(e) {
   
   });
 	
- 
+	
+	// Meet the team page - disable gold line hover on placeholders
+	
+	
+	
+	$('img.placeholder').parents('.single_meet_team').addClass('no_gold')
+	
+
 	
   
 }); // document ready

@@ -262,6 +262,19 @@ span.required {
 }
 
 
+
+// i.e. text gradient fallback
+
+
+.no-backgroundcliptext {
+	.single_location {
+		span.location_title, span.phone_title {
+			@include mytextgradientfallback;
+		}
+	}
+}
+
+
 a.location_button.button {
 	display: none;
 }

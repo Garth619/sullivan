@@ -103,6 +103,20 @@ body.page-template-template-contact {
 }
 
 
+
+// i.e. text gradient fallback
+
+
+
+.no-backgroundcliptext {
+	.contact_page_single {
+		span.location_title, .contect_phone_wrapper span {
+			@include mytextgradientfallback;
+		}
+	}
+}
+
+
 .contect_phone_wrapper.phone {
 	margin-top:70px;
 }

@@ -124,6 +124,15 @@ header {
 body.no-banner {
 	header {
 		background:$bluedark;
+		border-bottom:none;
+	}
+	.sticky_nav {
+		.menu_wrapper {
+			height:89px;
+		}
+	}
+	.menu_wrapper {
+		height:90px;
 	}
 	.header_right {
 		.internal_no_banner_consult {
@@ -141,6 +150,10 @@ body.no-banner {
 				letter-spacing: 0.2em;
 				text-decoration: none;
 				padding:0 35px;
+				transition: background 200ms ease-in-out;
+				&:hover {
+					background: $gold;
+				}
 			}
 		}
 	}
@@ -356,6 +369,12 @@ body:not(.page-template-template-home) {
 			}
 		}
 	}
+	
+	
+body.no-banner .menu_wrapper {
+	height:92px;
+}
+	
 	
 	
 .sticky_nav {

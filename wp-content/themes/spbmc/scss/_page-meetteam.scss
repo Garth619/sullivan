@@ -87,6 +87,15 @@
 	}
 	
 	
+	.single_meet_team.no_gold {
+		&:hover {
+			.single_meet_team_inner {
+				border:1px solid transparent;
+			}
+		}
+	}
+	
+	
 	.single_meet_team {
 		flex-basis:25%;
 		height:518px;
